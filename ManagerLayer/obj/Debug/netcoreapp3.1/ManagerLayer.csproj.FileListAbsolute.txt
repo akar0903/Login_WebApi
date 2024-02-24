@@ -1,0 +1,15 @@
+C:\Users\user\Collections\FunDo\ManagerLayer\bin\Debug\netcoreapp3.1\ManagerLayer.deps.json
+C:\Users\user\Collections\FunDo\ManagerLayer\bin\Debug\netcoreapp3.1\ManagerLayer.dll
+C:\Users\user\Collections\FunDo\ManagerLayer\bin\Debug\netcoreapp3.1\ManagerLayer.pdb
+C:\Users\user\Collections\FunDo\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Collections\FunDo\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerLayer.AssemblyInfoInputs.cache
+C:\Users\user\Collections\FunDo\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerLayer.AssemblyInfo.cs
+C:\Users\user\Collections\FunDo\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerLayer.csproj.CoreCompileInputs.cache
+C:\Users\user\Collections\FunDo\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerLayer.dll
+C:\Users\user\Collections\FunDo\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerLayer.pdb
+C:\Users\user\Collections\FunDo\ManagerLayer\bin\Debug\netcoreapp3.1\CommonLayer.dll
+C:\Users\user\Collections\FunDo\ManagerLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.dll
+C:\Users\user\Collections\FunDo\ManagerLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
+C:\Users\user\Collections\FunDo\ManagerLayer\bin\Debug\netcoreapp3.1\CommonLayer.pdb
+C:\Users\user\Collections\FunDo\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerLayer.csproj.AssemblyReference.cache
+C:\Users\user\Collections\FunDo\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerLayer.csproj.CopyComplete
