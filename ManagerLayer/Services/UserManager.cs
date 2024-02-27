@@ -2,9 +2,11 @@
 using ManagerLayer.Interfaces;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interfaces;
+using RepositoryLayer.Migrations;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using User = RepositoryLayer.Entity.User;
 namespace ManagerLayer.Services
 {
     public class UserManager : IUserManager
@@ -21,6 +23,14 @@ namespace ManagerLayer.Services
         public User UserLogin(Login model)
         {
             return repository.UserLogin(model);
+        }
+        public string ForgotPassword(string email)
+        {
+            return repository.ForgotPassword(email);
+        }
+        public string GenerateToken(string email, int Id)
+        {
+            return repository.GenerateToken(email, Id);
         }
     }
 }

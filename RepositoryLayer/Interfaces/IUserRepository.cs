@@ -10,5 +10,7 @@ namespace RepositoryLayer.Interfaces
     {
         public User UserRegistration(RegisterModel model);
         public User UserLogin(Login model);
+        public string ForgotPassword(string email);
+        public string GenerateToken(string email, int id);
     }
 }

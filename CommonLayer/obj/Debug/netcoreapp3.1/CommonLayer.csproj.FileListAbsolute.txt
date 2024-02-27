@@ -7,3 +7,4 @@ C:\Users\user\Collections\FunDo\CommonLayer\obj\Debug\netcoreapp3.1\CommonLayer.
 C:\Users\user\Collections\FunDo\CommonLayer\obj\Debug\netcoreapp3.1\CommonLayer.csproj.CoreCompileInputs.cache
 C:\Users\user\Collections\FunDo\CommonLayer\obj\Debug\netcoreapp3.1\CommonLayer.dll
 C:\Users\user\Collections\FunDo\CommonLayer\obj\Debug\netcoreapp3.1\CommonLayer.pdb
+C:\Users\user\Collections\FunDo\CommonLayer\obj\Debug\netcoreapp3.1\CommonLayer.sourcelink.json
