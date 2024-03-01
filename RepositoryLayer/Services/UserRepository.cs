@@ -1,50 +1,65 @@
-﻿using CommonLayer.RequestModel;
+﻿using Common_layer.RequestModel;
+using CommonLayer.RequestModel;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interfaces;
+using RepositoryLayer.Migrations;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.Design;
 using System.IdentityModel.Tokens.Jwt;
+using System.IO;
 using System.Linq;
-using System.Linq.Expressions;
+using System.Reflection.Metadata;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
+using User = RepositoryLayer.Entity.User;
 
-namespace RepositoryLayer.Services
+namespace Repository_layer.Services
 {
     public class UserRepository : IUserRepository
     {
         private readonly FundoContext context;
         private readonly IConfiguration config;
-        public UserRepository(FundoContext context,IConfiguration config)
+        public UserRepository(FundoContext context, IConfiguration config)
         {
             this.context = context;
             this.config = config;
         }
-        public User UserRegistration(RegisterModel model)
+        public User UserRegisteration(RegisterModel model)
         {
             User entity = new User();
             entity.FirstName = model.FirstName;
             entity.LastName = model.LastName;
             entity.Email = model.Email;
-            entity.Password = model.Password;
-            context.UserTable.Add(entity);
-            context.SaveChanges();
-            return entity;
+            entity.Password = Encryption("eergewweterg4tq3rewgq34t343g3tky", model.Password);
+            User user = context.UserTable.FirstOrDefault(a => a.Email == model.Email);
+            if (user != null)
+            {
+                throw new Exception("Email already exist");
+            }
+            else
+            {
+                context.UserTable.Add(entity);
+                context.SaveChanges();
+                return entity;
+            }
         }
-        public User UserLogin(Login model)
+        public string UserLogin(Login model)
         {
             try
             {
-                var user = context.UserTable.FirstOrDefault(u => u.Email == model.Email);
+                var user = context.UserTable.FirstOrDefault(a => a.Email == model.Email);
+                string password = Decryption("eergewweterg4tq3rewgq34t343g3tky", user.Password);
                 if (user != null)
                 {
-                    if (user.Password == model.Password)
+                    if (password == model.Password)
                     {
-                        return user;
+                        var token = GenerateToken(user.Email, user.Id);
+                        return token;
                     }
                     else
                     {
@@ -53,14 +68,73 @@ namespace RepositoryLayer.Services
                 }
                 else
                 {
-                    throw new Exception("User not found");
+                    throw new Exception("user not found");
                 }
-
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Login failed: {ex.Message} ");
+                Console.WriteLine($"Login failed {ex.Message}");
                 return null;
+            }
+        }
+        public bool IsEmailAlreadyRegistered(string email)
+        {
+            return context.UserTable.Any(u => u.Email == email);
+        }
+
+        public string Encryption(string key, string Password)
+        {
+            byte[] Initial_Vector = new byte[16];
+            byte[] array;
+
+            using (Aes aes = Aes.Create())
+            {
+
+                aes.Key = Encoding.UTF8.GetBytes(key);
+                aes.IV = Initial_Vector;
+
+                ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
+
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    using (CryptoStream cryptoStream = new CryptoStream((Stream)memoryStream, encryptor, CryptoStreamMode.Write))
+                    {
+                        using (StreamWriter streamWriter = new StreamWriter((Stream)cryptoStream))
+                        {
+                            streamWriter.Write(Password);
+                        }
+
+                        array = memoryStream.ToArray();
+                    }
+                }
+            }
+
+            return Convert.ToBase64String(array);
+        }
+
+        public string Decryption(string key, string Password)
+        {
+            byte[] iv = new byte[16];
+            byte[] buffer = Convert.FromBase64String(Password);
+
+            using (Aes aes = Aes.Create())
+            {
+                aes.Key = Encoding.UTF8.GetBytes(key);
+                aes.IV = iv;
+                ICryptoTransform decryptor = aes.CreateDecryptor(aes.Key, aes.IV);
+
+                using (MemoryStream memoryStream = new MemoryStream(buffer))
+                {
+                    using (CryptoStream cryptoStream = new CryptoStream((Stream)memoryStream, decryptor, CryptoStreamMode.Read))
+                    {
+                        using (StreamReader streamReader = new StreamReader((Stream)cryptoStream))
+                        {
+                            return streamReader.ReadToEnd();
+                        }
+                    }
+                }
+
+
             }
         }
         public string GenerateToken(string Email, int Id)
@@ -81,17 +155,33 @@ namespace RepositoryLayer.Services
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
         public string ForgotPassword(string email)
         {
             var user = context.UserTable.FirstOrDefault(a => a.Email == email);
             if (user != null)
             {
-                var token = GenerateToken(user.Email, user.Id);
+                string token = GenerateToken(user.Email, user.Id);
                 return token;
             }
             else
             {
                 return null;
+            }
+        }
+        public bool ResetPassword(string Email, ResetPasswordModel model)
+        {
+            User user = context.UserTable.ToList().Find(user => user.Email == Email);
+            if (user != null)
+            {
+                user.Password = Encryption("eergewweterg4tq3rewgq34t343g3tky", model.ConfirmPassword);
+
+                context.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

@@ -8,9 +8,12 @@ namespace RepositoryLayer.Interfaces
 {
     public interface IUserRepository
     {
-        public User UserRegistration(RegisterModel model);
-        public User UserLogin(Login model);
+        public User UserRegisteration(RegisterModel model);
+        public string UserLogin(Login model);
         public string ForgotPassword(string email);
         public string GenerateToken(string email, int id);
+        public bool ResetPassword(string Email, ResetPasswordModel resetPasswordModel);
+        public bool IsEmailAlreadyRegistered(string email);
+       
     }
 }

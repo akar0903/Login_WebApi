@@ -1,19 +1,19 @@
-﻿using CommonLayer.RequestModel;
-using ManagerLayer.Services;
+﻿using Common_layer.RequestModel;
+using CommonLayer.RequestModel;
 using RepositoryLayer.Entity;
-using RepositoryLayer.Migrations;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using User = RepositoryLayer.Entity.User;
 
-namespace ManagerLayer.Interfaces
+namespace Manager_Layer.Interfaces
 {
     public interface IUserManager
     {
-        public User UserRegistration(RegisterModel model);
-        public User UserLogin(Login model);
+        public User UserRegisteration(RegisterModel model);
+        public string UserLogin(Login model);
         public string ForgotPassword(string email);
-        public string GenerateToken(string email, int id);
+        public string GenerateToken(string Email, int Id);
+        public bool IsEmailAlreadyRegistered(string email);
+        public bool ResetPassword(string Email, ResetPasswordModel model);
     }
 }

@@ -17,7 +17,7 @@ namespace CommonLayer.RequestModel
             Message.BodyEncoding = Encoding.UTF8;
             Message.IsBodyHtml = true;
             SmtpClient SmtpClient = new SmtpClient("smtp.gmail.com",587);
-            NetworkCredential credential = new NetworkCredential("av0019@srmist.edu.in", "ryca winh uwhu gzdu");
+            NetworkCredential credential = new NetworkCredential("arunkarthik2018@gmail.com", "ryca winh uwhu gzdu");
             SmtpClient.EnableSsl = true;
             SmtpClient.UseDefaultCredentials = true;
             SmtpClient.Credentials = credential;

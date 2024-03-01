@@ -73,3 +73,7 @@ C:\Users\user\Collections\FunDo\FunDo\bin\Debug\netcoreapp3.1\MassTransit.AspNet
 C:\Users\user\Collections\FunDo\FunDo\bin\Debug\netcoreapp3.1\MassTransit.ExtensionsDependencyInjectionIntegration.dll
 C:\Users\user\Collections\FunDo\FunDo\bin\Debug\netcoreapp3.1\MassTransit.RabbitMqTransport.dll
 C:\Users\user\Collections\FunDo\FunDo\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\user\Collections\FunDo\FunDo\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
+C:\Users\user\Collections\FunDo\FunDo\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\user\Collections\FunDo\FunDo\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\user\Collections\FunDo\FunDo\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll

@@ -1,13 +1,9 @@
 ﻿using CommonLayer.RequestModel;
-using ManagerLayer.Interfaces;
+using Manager_Layer.Interfaces;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interfaces;
-using RepositoryLayer.Migrations;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using User = RepositoryLayer.Entity.User;
-namespace ManagerLayer.Services
+
+namespace Manager_Layer.Services
 {
     public class UserManager : IUserManager
     {
@@ -16,11 +12,11 @@ namespace ManagerLayer.Services
         {
             this.repository = repository;
         }
-        public User UserRegistration(RegisterModel model)
+        public User UserRegisteration(RegisterModel model)
         {
-            return repository.UserRegistration(model);
+            return repository.UserRegisteration(model);
         }
-        public User UserLogin(Login model)
+        public string UserLogin(Login model)
         {
             return repository.UserLogin(model);
         }
@@ -28,9 +24,17 @@ namespace ManagerLayer.Services
         {
             return repository.ForgotPassword(email);
         }
-        public string GenerateToken(string email, int Id)
+        public string GenerateToken(string Email, int Id)
         {
-            return repository.GenerateToken(email, Id);
+            return repository.GenerateToken(Email, Id);
+        }
+        public bool IsEmailAlreadyRegistered(string email)
+        {
+            return repository.IsEmailAlreadyRegistered(email);
+        }
+        public bool ResetPassword(string Email, ResetPasswordModel model)
+        {
+            return repository.ResetPassword(Email, model);
         }
     }
 }
