@@ -21,7 +21,7 @@ namespace FunDo.Controllers
         private INoteManager manager;
 
         private readonly FundoContext context;
-        public NoteController(INoteManager manager,FundoContext context)
+        public NoteController(INoteManager manager, FundoContext context)
         {
             this.manager = manager;
             this.context = context;
@@ -252,12 +252,12 @@ namespace FunDo.Controllers
         [Authorize]
         [HttpPost]
         [Route("updatelabel")]
-        public ActionResult UpdateLabel(int NoteID, string LabelName,string name)
+        public ActionResult UpdateLabel(int NoteID, string LabelName, string name)
         {
             try
             {
                 int id = Convert.ToInt32(User.FindFirst("Id").Value);
-                var response = manager.UpdateLabel(NoteID,name, LabelName);
+                var response = manager.UpdateLabel(NoteID, name, LabelName);
                 if (response != null)
                 {
                     return Ok(new ResModel<UserLabel> { Success = true, Message = "Label updation successfull", Data = null });
@@ -267,7 +267,7 @@ namespace FunDo.Controllers
                     return BadRequest(new ResModel<UserLabel> { Success = false, Message = "Label updation failed", Data = null });
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(new ResModel<UserLabel> { Success = false, Message = ex.Message, Data = null });
             }
@@ -289,10 +289,65 @@ namespace FunDo.Controllers
             }
 
         }
+        [Authorize]
+        [HttpDelete]
+        [Route("LabelDelete")]
+        public ActionResult LabelDelete(int labelId)
+        {
+            try
+            {
+                int id = Convert.ToInt32(User.FindFirst("Id").Value);
+                var response = manager.LabelDelete(labelId);
+                if (response != null)
+                {
+                    return Ok(new ResModel<UserLabel> { Success = true, Message = "Deleted Successfully", Data = response });
+                }
+                else
+                {
+                    return BadRequest(new ResModel<UserLabel> { Success = false, Message = "Deletion failed", Data = response });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ResModel<UserLabel> { Success = false, Message = ex.Message, Data = null });
+            }
+        }
+
+        [Authorize]
+        [HttpGet]
+        [Route("review")]
+        public ActionResult GetNotesById(int noteId)
+        {
+            int id = Convert.ToInt32(User.FindFirst("Id").Value);
+            var response = manager.GetNotesById(noteId);
+            try
+            {
+                if (response != null)
+                {
+                    return Ok(new ResModel<NotesEntity> { Success = true, Message = "fetch Successfully", Data = response });
+                }
+                else
+                {
+                    return BadRequest(new ResModel<NotesEntity> { Success = false, Message = "fetch failed", Data = response });
+                }
+            }
+            
+            catch (Exception ex)
+            {
+                return BadRequest(new ResModel<UserLabel> { Success = false, Message = ex.Message, Data = null });
+            }
+        }
     }
-}   
+        
+       
+
+    }
+
+
+
+ 
         
 
-    
+   
 
 

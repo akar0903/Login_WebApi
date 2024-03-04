@@ -782,3 +782,670 @@ WHERE [u].[NoteId] = @__id_0
 2024-03-04 11:55:33.8086 INFO Executed endpoint 'FunDo.Controllers.NoteController.GetLabel (FunDo)'
 2024-03-04 11:55:33.8086 DEBUG 'FundoContext' disposed.
 2024-03-04 11:55:33.8086 INFO Request finished in 403.7229ms 200 application/json; charset=utf-8
+2024-03-04 12:20:43.2462 DEBUG Hosting starting
+2024-03-04 12:20:43.4412 INFO User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-04 12:20:44.0084 DEBUG Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-902fbed5-f2be-402c-b834-fdb4cbee8645.xml'.
+2024-03-04 12:20:44.0311 DEBUG Found key {902fbed5-f2be-402c-b834-fdb4cbee8645}.
+2024-03-04 12:20:44.0508 DEBUG Considering key {902fbed5-f2be-402c-b834-fdb4cbee8645} with expiration date 2024-05-27 11:42:30Z as default key.
+2024-03-04 12:20:44.1244 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-04 12:20:44.1244 DEBUG Decrypting secret element using Windows DPAPI.
+2024-03-04 12:20:44.1244 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-04 12:20:44.1430 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-03-04 12:20:44.1430 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-03-04 12:20:44.1430 DEBUG Using key {902fbed5-f2be-402c-b834-fdb4cbee8645} as the default key.
+2024-03-04 12:20:44.1430 DEBUG Key ring with default key {902fbed5-f2be-402c-b834-fdb4cbee8645} was loaded during application startup.
+2024-03-04 12:20:44.1615 DEBUG Starting host: rabbitmq://localhost/
+2024-03-04 12:20:44.2563 DEBUG Connect: guest@localhost:5672/
+2024-03-04 12:20:45.1618 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 56661)
+2024-03-04 12:20:45.7148 DEBUG Loaded hosting startup assembly FunDo
+2024-03-04 12:20:45.7148 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-04 12:20:45.7148 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-04 12:20:45.7148 INFO Application started. Press Ctrl+C to shut down.
+2024-03-04 12:20:45.7148 INFO Hosting environment: Development
+2024-03-04 12:20:45.7148 INFO Content root path: C:\Users\user\Collections\FunDo\FunDo
+2024-03-04 12:20:45.7148 DEBUG Hosting started
+2024-03-04 12:20:45.7855 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2024-03-04 12:20:46.0210 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2024-03-04 12:20:46.1852 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-04 12:20:46.2847 DEBUG Response markup is scheduled to include browser refresh script injection.
+2024-03-04 12:20:46.3507 DEBUG Response markup was updated to include browser refresh script injection.
+2024-03-04 12:20:46.3507 INFO Request finished in 571.2658ms 200 text/html;charset=utf-8
+2024-03-04 12:20:46.5084 INFO Request starting HTTP/2.0 GET https://localhost:44355/_framework/aspnetcore-browser-refresh.js  
+2024-03-04 12:20:46.5333 INFO Request finished in 24.8199ms 200 application/javascript; charset=utf-8
+2024-03-04 12:20:46.5333 INFO Request starting HTTP/2.0 GET https://localhost:44355/_vs/browserLink  
+2024-03-04 12:20:46.7048 INFO Request finished in 170.9224ms 200 text/javascript; charset=UTF-8
+2024-03-04 12:20:46.8605 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2024-03-04 12:20:46.8605 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-04 12:20:47.1320 INFO Request finished in 271.5945ms 200 application/json;charset=utf-8
+2024-03-04 12:21:01.1765 INFO Request starting HTTP/2.0 POST https://localhost:44355/api/User/Log application/json 47
+2024-03-04 12:21:01.1765 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-04 12:21:01.1867 DEBUG POST requests are not supported
+2024-03-04 12:21:01.2492 DEBUG 1 candidate(s) found for the request path '/api/User/Log'
+2024-03-04 12:21:01.2492 DEBUG Endpoint 'FunDoNotes.Controllers.UserController.Login (FunDo)' with route pattern 'api/User/Log' is valid for the request path '/api/User/Log'
+2024-03-04 12:21:01.2492 DEBUG Request matched endpoint 'FunDoNotes.Controllers.UserController.Login (FunDo)'
+2024-03-04 12:21:01.2492 INFO Executing endpoint 'FunDoNotes.Controllers.UserController.Login (FunDo)'
+2024-03-04 12:21:01.2668 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2024-03-04 12:21:01.3057 INFO Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(CommonLayer.RequestModel.Login) on controller FunDoNotes.Controllers.UserController (FunDo).
+2024-03-04 12:21:01.3057 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-04 12:21:01.3057 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-04 12:21:01.3057 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-04 12:21:01.3057 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-04 12:21:01.3057 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-04 12:21:01.3057 DEBUG Executing controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-04 12:21:01.5588 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-03-04 12:21:01.5972 DEBUG Executed controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-04 12:21:01.6074 DEBUG Attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.Login' ...
+2024-03-04 12:21:01.6074 DEBUG Attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.Login' using the name '' in request data ...
+2024-03-04 12:21:01.6074 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-03-04 12:21:01.6271 DEBUG JSON input formatter succeeded, deserializing to type 'CommonLayer.RequestModel.Login'
+2024-03-04 12:21:01.6271 DEBUG Done attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.Login'.
+2024-03-04 12:21:01.6271 DEBUG Done attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.Login'.
+2024-03-04 12:21:01.6271 DEBUG Attempting to validate the bound parameter 'model' of type 'CommonLayer.RequestModel.Login' ...
+2024-03-04 12:21:01.6271 DEBUG Done attempting to validate the bound parameter 'model' of type 'CommonLayer.RequestModel.Login'.
+2024-03-04 12:21:02.7650 INFO Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-03-04 12:21:03.1427 DEBUG queryContext => new QueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, User>, 
+    RepositoryLayer.Context.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2024-03-04 12:21:03.2072 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-04 12:21:03.5986 DEBUG Created DbCommand for 'ExecuteReader' (384ms).
+2024-03-04 12:21:03.6195 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:21:03.8938 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:21:03.9279 DEBUG Executing DbCommand [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__model_Email_0
+2024-03-04 12:21:04.0231 INFO Executed DbCommand (118ms) [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__model_Email_0
+2024-03-04 12:21:04.0392 DEBUG A data reader was disposed.
+2024-03-04 12:21:04.0392 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:21:04.0558 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:21:04.2588 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-04 12:21:04.2588 DEBUG No information found on request to perform content negotiation.
+2024-03-04 12:21:04.2588 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-04 12:21:04.2588 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-04 12:21:04.2588 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-04 12:21:04.2639 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-04 12:21:04.2639 INFO Executed action FunDoNotes.Controllers.UserController.Login (FunDo) in 2964.7176ms
+2024-03-04 12:21:04.2639 INFO Executed endpoint 'FunDoNotes.Controllers.UserController.Login (FunDo)'
+2024-03-04 12:21:04.2639 DEBUG 'FundoContext' disposed.
+2024-03-04 12:21:04.2844 INFO Request finished in 3108.4345ms 400 application/json; charset=utf-8
+2024-03-04 12:21:12.1080 INFO Request starting HTTP/2.0 POST https://localhost:44355/api/User/Log application/json 54
+2024-03-04 12:21:12.1080 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-04 12:21:12.1080 DEBUG POST requests are not supported
+2024-03-04 12:21:12.1080 DEBUG 1 candidate(s) found for the request path '/api/User/Log'
+2024-03-04 12:21:12.1080 DEBUG Endpoint 'FunDoNotes.Controllers.UserController.Login (FunDo)' with route pattern 'api/User/Log' is valid for the request path '/api/User/Log'
+2024-03-04 12:21:12.1080 DEBUG Request matched endpoint 'FunDoNotes.Controllers.UserController.Login (FunDo)'
+2024-03-04 12:21:12.1080 INFO Executing endpoint 'FunDoNotes.Controllers.UserController.Login (FunDo)'
+2024-03-04 12:21:12.1080 INFO Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(CommonLayer.RequestModel.Login) on controller FunDoNotes.Controllers.UserController (FunDo).
+2024-03-04 12:21:12.1080 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-04 12:21:12.1080 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-04 12:21:12.1080 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-04 12:21:12.1080 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-04 12:21:12.1080 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-04 12:21:12.1080 DEBUG Executing controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-04 12:21:12.1080 DEBUG Executed controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-04 12:21:12.1080 DEBUG Attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.Login' ...
+2024-03-04 12:21:12.1080 DEBUG Attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.Login' using the name '' in request data ...
+2024-03-04 12:21:12.1080 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-03-04 12:21:12.1080 DEBUG JSON input formatter succeeded, deserializing to type 'CommonLayer.RequestModel.Login'
+2024-03-04 12:21:12.1080 DEBUG Done attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.Login'.
+2024-03-04 12:21:12.1080 DEBUG Done attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.Login'.
+2024-03-04 12:21:12.1080 DEBUG Attempting to validate the bound parameter 'model' of type 'CommonLayer.RequestModel.Login' ...
+2024-03-04 12:21:12.1080 DEBUG Done attempting to validate the bound parameter 'model' of type 'CommonLayer.RequestModel.Login'.
+2024-03-04 12:21:12.1704 INFO Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-03-04 12:21:12.1704 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-04 12:21:12.1704 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2024-03-04 12:21:12.1704 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:21:12.1704 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:21:12.1704 DEBUG Executing DbCommand [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__model_Email_0
+2024-03-04 12:21:12.1704 INFO Executed DbCommand (7ms) [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__model_Email_0
+2024-03-04 12:21:12.2434 DEBUG Context 'FundoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:21:12.2734 DEBUG A data reader was disposed.
+2024-03-04 12:21:12.2734 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:21:12.2734 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:21:12.8419 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-04 12:21:12.8419 DEBUG No information found on request to perform content negotiation.
+2024-03-04 12:21:12.8419 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-04 12:21:12.8419 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-04 12:21:12.8419 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-04 12:21:12.8419 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-04 12:21:12.8419 INFO Executed action FunDoNotes.Controllers.UserController.Login (FunDo) in 725.2128ms
+2024-03-04 12:21:12.8419 INFO Executed endpoint 'FunDoNotes.Controllers.UserController.Login (FunDo)'
+2024-03-04 12:21:12.8419 DEBUG 'FundoContext' disposed.
+2024-03-04 12:21:12.8419 INFO Request finished in 737.4271ms 200 application/json; charset=utf-8
+2024-03-04 12:22:07.5049 INFO Request starting HTTP/2.0 POST https://localhost:44355/api/Note/api/Note/note-creation application/json 277
+2024-03-04 12:22:07.6243 INFO Successfully validated the token.
+2024-03-04 12:22:07.6243 DEBUG AuthenticationScheme: Bearer was successfully authenticated.
+2024-03-04 12:22:07.6243 DEBUG POST requests are not supported
+2024-03-04 12:22:07.6243 DEBUG 1 candidate(s) found for the request path '/api/Note/api/Note/note-creation'
+2024-03-04 12:22:07.6243 DEBUG Endpoint 'FunDo.Controllers.NoteController.NoteCreation (FunDo)' with route pattern 'api/Note/api/Note/note-creation' is valid for the request path '/api/Note/api/Note/note-creation'
+2024-03-04 12:22:07.6243 DEBUG Request matched endpoint 'FunDo.Controllers.NoteController.NoteCreation (FunDo)'
+2024-03-04 12:22:07.6471 INFO Authorization was successful.
+2024-03-04 12:22:07.6471 INFO Executing endpoint 'FunDo.Controllers.NoteController.NoteCreation (FunDo)'
+2024-03-04 12:22:07.6581 INFO Route matched with {action = "NoteCreation", controller = "Note"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult NoteCreation(CommonLayer.RequestModel.NoteCreationModel) on controller FunDo.Controllers.NoteController (FunDo).
+2024-03-04 12:22:07.6581 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-04 12:22:07.6581 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-04 12:22:07.6581 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-04 12:22:07.6581 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-04 12:22:07.6581 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-04 12:22:07.6581 DEBUG Executing controller factory for controller FunDo.Controllers.NoteController (FunDo)
+2024-03-04 12:22:07.6581 DEBUG Executed controller factory for controller FunDo.Controllers.NoteController (FunDo)
+2024-03-04 12:22:07.6581 DEBUG Attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.NoteCreationModel' ...
+2024-03-04 12:22:07.6581 DEBUG Attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.NoteCreationModel' using the name '' in request data ...
+2024-03-04 12:22:07.6581 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-03-04 12:22:07.6733 DEBUG JSON input formatter succeeded, deserializing to type 'CommonLayer.RequestModel.NoteCreationModel'
+2024-03-04 12:22:07.6733 DEBUG Done attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.NoteCreationModel'.
+2024-03-04 12:22:07.6733 DEBUG Done attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.NoteCreationModel'.
+2024-03-04 12:22:07.6733 DEBUG Attempting to validate the bound parameter 'model' of type 'CommonLayer.RequestModel.NoteCreationModel' ...
+2024-03-04 12:22:07.6733 DEBUG Done attempting to validate the bound parameter 'model' of type 'CommonLayer.RequestModel.NoteCreationModel'.
+2024-03-04 12:22:07.6928 INFO Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-03-04 12:22:07.7346 DEBUG 'FundoContext' generated a temporary value for the 'NoteId' property of new 'NotesEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:22:07.7744 DEBUG Context 'FundoContext' started tracking 'NotesEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:22:07.7744 DEBUG SaveChanges starting for 'FundoContext'.
+2024-03-04 12:22:07.7804 DEBUG DetectChanges starting for 'FundoContext'.
+2024-03-04 12:22:07.8085 DEBUG DetectChanges completed for 'FundoContext'.
+2024-03-04 12:22:07.8191 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:07.8191 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:07.8191 DEBUG Beginning transaction with isolation level 'Unspecified'.
+2024-03-04 12:22:07.8299 DEBUG Began transaction with isolation level 'ReadCommitted'.
+2024-03-04 12:22:07.8891 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-04 12:22:07.8891 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2024-03-04 12:22:07.8891 DEBUG Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime2), @p10='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Note] ([Colour], [CreatedAt], [Description], [Image], [IsArchive], [IsPin], [IsTrash], [Reminder], [Title], [UpdatedAt], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+SELECT [NoteId]
+FROM [Note]
+WHERE @@ROWCOUNT = 1 AND [NoteId] = scope_identity();
+2024-03-04 12:22:07.9123 INFO Executed DbCommand (21ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime2), @p10='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Note] ([Colour], [CreatedAt], [Description], [Image], [IsArchive], [IsPin], [IsTrash], [Reminder], [Title], [UpdatedAt], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+SELECT [NoteId]
+FROM [Note]
+WHERE @@ROWCOUNT = 1 AND [NoteId] = scope_identity();
+2024-03-04 12:22:07.9312 DEBUG Foreign key property 'NotesEntity.NoteId' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-03-04 12:22:07.9427 DEBUG A data reader was disposed.
+2024-03-04 12:22:07.9427 DEBUG Committing transaction.
+2024-03-04 12:22:07.9427 DEBUG Committing transaction.
+2024-03-04 12:22:07.9511 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:07.9511 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:07.9511 DEBUG Disposing transaction.
+2024-03-04 12:22:07.9664 DEBUG An 'NotesEntity' entity tracked by 'FundoContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:22:07.9664 DEBUG SaveChanges completed for 'FundoContext' with 1 entities written to the database.
+2024-03-04 12:22:07.9664 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-04 12:22:07.9664 DEBUG No information found on request to perform content negotiation.
+2024-03-04 12:22:07.9664 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-04 12:22:07.9664 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-04 12:22:07.9664 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-04 12:22:07.9664 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[RepositoryLayer.Entity.NotesEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-04 12:22:07.9664 INFO Executed action FunDo.Controllers.NoteController.NoteCreation (FunDo) in 320.9805ms
+2024-03-04 12:22:07.9664 INFO Executed endpoint 'FunDo.Controllers.NoteController.NoteCreation (FunDo)'
+2024-03-04 12:22:07.9664 DEBUG 'FundoContext' disposed.
+2024-03-04 12:22:07.9664 INFO Request finished in 475.7041ms 200 application/json; charset=utf-8
+2024-03-04 12:22:20.0255 INFO Request starting HTTP/2.0 GET https://localhost:44355/api/Note/all  
+2024-03-04 12:22:20.0255 INFO Successfully validated the token.
+2024-03-04 12:22:20.0307 DEBUG AuthenticationScheme: Bearer was successfully authenticated.
+2024-03-04 12:22:20.0307 DEBUG The request path  does not match the path filter
+2024-03-04 12:22:20.0307 DEBUG 1 candidate(s) found for the request path '/api/Note/all'
+2024-03-04 12:22:20.0307 DEBUG Endpoint 'FunDo.Controllers.NoteController.All (FunDo)' with route pattern 'api/Note/all' is valid for the request path '/api/Note/all'
+2024-03-04 12:22:20.0307 DEBUG Request matched endpoint 'FunDo.Controllers.NoteController.All (FunDo)'
+2024-03-04 12:22:20.0307 INFO Authorization was successful.
+2024-03-04 12:22:20.0307 INFO Executing endpoint 'FunDo.Controllers.NoteController.All (FunDo)'
+2024-03-04 12:22:20.0307 INFO Route matched with {action = "All", controller = "Note"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult All() on controller FunDo.Controllers.NoteController (FunDo).
+2024-03-04 12:22:20.0307 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-04 12:22:20.0307 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-04 12:22:20.0307 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-04 12:22:20.0307 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-04 12:22:20.0307 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-04 12:22:20.0307 DEBUG Executing controller factory for controller FunDo.Controllers.NoteController (FunDo)
+2024-03-04 12:22:20.0307 DEBUG Executed controller factory for controller FunDo.Controllers.NoteController (FunDo)
+2024-03-04 12:22:20.0488 INFO Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-03-04 12:22:20.0605 DEBUG queryContext => new QueryingEnumerable<NotesEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, NotesEntity>, 
+    RepositoryLayer.Context.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+2024-03-04 12:22:20.0605 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-04 12:22:20.0605 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2024-03-04 12:22:20.0605 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:20.0605 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:20.0605 DEBUG Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedAt], [n].[Description], [n].[Image], [n].[IsArchive], [n].[IsPin], [n].[IsTrash], [n].[Reminder], [n].[Title], [n].[UpdatedAt], [n].[UserId]
+FROM [Note] AS [n]
+WHERE [n].[UserId] = @__id_0
+2024-03-04 12:22:20.0851 INFO Executed DbCommand (23ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedAt], [n].[Description], [n].[Image], [n].[IsArchive], [n].[IsPin], [n].[IsTrash], [n].[Reminder], [n].[Title], [n].[UpdatedAt], [n].[UserId]
+FROM [Note] AS [n]
+WHERE [n].[UserId] = @__id_0
+2024-03-04 12:22:20.0851 DEBUG Context 'FundoContext' started tracking 'NotesEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:22:20.0851 DEBUG Context 'FundoContext' started tracking 'NotesEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:22:20.0851 DEBUG A data reader was disposed.
+2024-03-04 12:22:20.0851 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:20.0851 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:20.0851 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-04 12:22:20.0851 DEBUG No information found on request to perform content negotiation.
+2024-03-04 12:22:20.0851 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-04 12:22:20.0851 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-04 12:22:20.0851 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-04 12:22:20.0851 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[System.Collections.Generic.List`1[[RepositoryLayer.Entity.NotesEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-04 12:22:20.0942 INFO Executed action FunDo.Controllers.NoteController.All (FunDo) in 51.4001ms
+2024-03-04 12:22:20.0942 INFO Executed endpoint 'FunDo.Controllers.NoteController.All (FunDo)'
+2024-03-04 12:22:20.0942 DEBUG 'FundoContext' disposed.
+2024-03-04 12:22:20.0942 INFO Request finished in 69.4548ms 200 application/json; charset=utf-8
+2024-03-04 12:22:39.1188 INFO Request starting HTTP/2.0 POST https://localhost:44355/api/Note/api/Note/add-label?NoteID=2&LabelName=personal  0
+2024-03-04 12:22:39.1188 INFO Successfully validated the token.
+2024-03-04 12:22:39.1188 DEBUG AuthenticationScheme: Bearer was successfully authenticated.
+2024-03-04 12:22:39.1188 DEBUG POST requests are not supported
+2024-03-04 12:22:39.1232 DEBUG 1 candidate(s) found for the request path '/api/Note/api/Note/add-label'
+2024-03-04 12:22:39.1232 DEBUG Endpoint 'FunDo.Controllers.NoteController.AddLabel (FunDo)' with route pattern 'api/Note/api/Note/add-label' is valid for the request path '/api/Note/api/Note/add-label'
+2024-03-04 12:22:39.1232 DEBUG Request matched endpoint 'FunDo.Controllers.NoteController.AddLabel (FunDo)'
+2024-03-04 12:22:39.1232 INFO Authorization was successful.
+2024-03-04 12:22:39.1232 INFO Executing endpoint 'FunDo.Controllers.NoteController.AddLabel (FunDo)'
+2024-03-04 12:22:39.1232 INFO Route matched with {action = "AddLabel", controller = "Note"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddLabel(Int32, System.String) on controller FunDo.Controllers.NoteController (FunDo).
+2024-03-04 12:22:39.1232 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-04 12:22:39.1232 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-04 12:22:39.1232 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-04 12:22:39.1232 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-04 12:22:39.1232 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-04 12:22:39.1232 DEBUG Executing controller factory for controller FunDo.Controllers.NoteController (FunDo)
+2024-03-04 12:22:39.1232 DEBUG Executed controller factory for controller FunDo.Controllers.NoteController (FunDo)
+2024-03-04 12:22:39.1232 DEBUG Attempting to bind parameter 'NoteID' of type 'System.Int32' ...
+2024-03-04 12:22:39.1389 DEBUG Attempting to bind parameter 'NoteID' of type 'System.Int32' using the name 'NoteID' in request data ...
+2024-03-04 12:22:39.1389 DEBUG Done attempting to bind parameter 'NoteID' of type 'System.Int32'.
+2024-03-04 12:22:39.1389 DEBUG Done attempting to bind parameter 'NoteID' of type 'System.Int32'.
+2024-03-04 12:22:39.1389 DEBUG Attempting to validate the bound parameter 'NoteID' of type 'System.Int32' ...
+2024-03-04 12:22:39.1389 DEBUG Done attempting to validate the bound parameter 'NoteID' of type 'System.Int32'.
+2024-03-04 12:22:39.1389 DEBUG Attempting to bind parameter 'LabelName' of type 'System.String' ...
+2024-03-04 12:22:39.1389 DEBUG Attempting to bind parameter 'LabelName' of type 'System.String' using the name 'LabelName' in request data ...
+2024-03-04 12:22:39.1389 DEBUG Done attempting to bind parameter 'LabelName' of type 'System.String'.
+2024-03-04 12:22:39.1389 DEBUG Done attempting to bind parameter 'LabelName' of type 'System.String'.
+2024-03-04 12:22:39.1389 DEBUG Attempting to validate the bound parameter 'LabelName' of type 'System.String' ...
+2024-03-04 12:22:39.1389 DEBUG Done attempting to validate the bound parameter 'LabelName' of type 'System.String'.
+2024-03-04 12:22:39.1389 INFO Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-03-04 12:22:39.1901 DEBUG queryContext => new QueryingEnumerable<UserLabel>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserLabel>, 
+    RepositoryLayer.Context.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2024-03-04 12:22:39.1901 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-04 12:22:39.1901 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2024-03-04 12:22:39.1901 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:39.1901 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:39.1901 DEBUG Executing DbCommand [Parameters=[@__UserID_0='?' (DbType = Int32), @__NoteID_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[LabelId], [u].[LabelName], [u].[NoteId], [u].[UserId]
+FROM [UserLabel] AS [u]
+WHERE (([u].[UserId] = @__UserID_0) AND ([u].[NoteId] = @__NoteID_1)) AND ([u].[LabelName] IS NOT NULL AND (([u].[LabelName] <> N'') OR [u].[LabelName] IS NULL))
+2024-03-04 12:22:39.2229 INFO Executed DbCommand (29ms) [Parameters=[@__UserID_0='?' (DbType = Int32), @__NoteID_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[LabelId], [u].[LabelName], [u].[NoteId], [u].[UserId]
+FROM [UserLabel] AS [u]
+WHERE (([u].[UserId] = @__UserID_0) AND ([u].[NoteId] = @__NoteID_1)) AND ([u].[LabelName] IS NOT NULL AND (([u].[LabelName] <> N'') OR [u].[LabelName] IS NULL))
+2024-03-04 12:22:39.2229 DEBUG A data reader was disposed.
+2024-03-04 12:22:39.2229 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:39.2229 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:39.2229 DEBUG 'FundoContext' generated a temporary value for the 'LabelId' property of new 'UserLabel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:22:39.2373 DEBUG Context 'FundoContext' started tracking 'UserLabel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:22:39.2373 DEBUG SaveChanges starting for 'FundoContext'.
+2024-03-04 12:22:39.2373 DEBUG DetectChanges starting for 'FundoContext'.
+2024-03-04 12:22:39.2373 DEBUG DetectChanges completed for 'FundoContext'.
+2024-03-04 12:22:39.2373 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:39.2373 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:39.2373 DEBUG Beginning transaction with isolation level 'Unspecified'.
+2024-03-04 12:22:39.2373 DEBUG Began transaction with isolation level 'ReadCommitted'.
+2024-03-04 12:22:39.2373 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-04 12:22:39.2373 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2024-03-04 12:22:39.2373 DEBUG Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [UserLabel] ([LabelName], [NoteId], [UserId])
+VALUES (@p0, @p1, @p2);
+SELECT [LabelId]
+FROM [UserLabel]
+WHERE @@ROWCOUNT = 1 AND [LabelId] = scope_identity();
+2024-03-04 12:22:39.2373 INFO Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [UserLabel] ([LabelName], [NoteId], [UserId])
+VALUES (@p0, @p1, @p2);
+SELECT [LabelId]
+FROM [UserLabel]
+WHERE @@ROWCOUNT = 1 AND [LabelId] = scope_identity();
+2024-03-04 12:22:39.2491 DEBUG Foreign key property 'UserLabel.LabelId' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-03-04 12:22:39.2491 DEBUG A data reader was disposed.
+2024-03-04 12:22:39.2491 DEBUG Committing transaction.
+2024-03-04 12:22:39.2491 DEBUG Committing transaction.
+2024-03-04 12:22:39.2491 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:39.2491 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:39.2491 DEBUG Disposing transaction.
+2024-03-04 12:22:39.2491 DEBUG An 'UserLabel' entity tracked by 'FundoContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:22:39.2491 DEBUG SaveChanges completed for 'FundoContext' with 1 entities written to the database.
+2024-03-04 12:22:39.2491 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-04 12:22:39.2491 DEBUG No information found on request to perform content negotiation.
+2024-03-04 12:22:39.2491 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-04 12:22:39.2491 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-04 12:22:39.2491 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-04 12:22:39.2491 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[RepositoryLayer.Entity.UserLabel, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-04 12:22:39.2491 INFO Executed action FunDo.Controllers.NoteController.AddLabel (FunDo) in 125.6733ms
+2024-03-04 12:22:39.2491 INFO Executed endpoint 'FunDo.Controllers.NoteController.AddLabel (FunDo)'
+2024-03-04 12:22:39.2491 DEBUG 'FundoContext' disposed.
+2024-03-04 12:22:39.2491 INFO Request finished in 140.6876ms 200 application/json; charset=utf-8
+2024-03-04 12:22:57.8460 INFO Request starting HTTP/2.0 DELETE https://localhost:44355/api/Note/LabelDelete?labelId=2  
+2024-03-04 12:22:57.8460 INFO Successfully validated the token.
+2024-03-04 12:22:57.8460 DEBUG AuthenticationScheme: Bearer was successfully authenticated.
+2024-03-04 12:22:57.8460 DEBUG DELETE requests are not supported
+2024-03-04 12:22:57.8460 DEBUG 1 candidate(s) found for the request path '/api/Note/LabelDelete'
+2024-03-04 12:22:57.8460 DEBUG Endpoint 'FunDo.Controllers.NoteController.LabelDelete (FunDo)' with route pattern 'api/Note/LabelDelete' is valid for the request path '/api/Note/LabelDelete'
+2024-03-04 12:22:57.8460 DEBUG Request matched endpoint 'FunDo.Controllers.NoteController.LabelDelete (FunDo)'
+2024-03-04 12:22:57.8587 INFO Authorization was successful.
+2024-03-04 12:22:57.8587 INFO Executing endpoint 'FunDo.Controllers.NoteController.LabelDelete (FunDo)'
+2024-03-04 12:22:57.8587 INFO Route matched with {action = "LabelDelete", controller = "Note"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult LabelDelete(Int32) on controller FunDo.Controllers.NoteController (FunDo).
+2024-03-04 12:22:57.8587 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-04 12:22:57.8587 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-04 12:22:57.8587 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-04 12:22:57.8587 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-04 12:22:57.8587 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-04 12:22:57.8587 DEBUG Executing controller factory for controller FunDo.Controllers.NoteController (FunDo)
+2024-03-04 12:22:57.8587 DEBUG Executed controller factory for controller FunDo.Controllers.NoteController (FunDo)
+2024-03-04 12:22:57.8587 DEBUG Attempting to bind parameter 'labelId' of type 'System.Int32' ...
+2024-03-04 12:22:57.8587 DEBUG Attempting to bind parameter 'labelId' of type 'System.Int32' using the name 'labelId' in request data ...
+2024-03-04 12:22:57.8587 DEBUG Done attempting to bind parameter 'labelId' of type 'System.Int32'.
+2024-03-04 12:22:57.8587 DEBUG Done attempting to bind parameter 'labelId' of type 'System.Int32'.
+2024-03-04 12:22:57.8587 DEBUG Attempting to validate the bound parameter 'labelId' of type 'System.Int32' ...
+2024-03-04 12:22:57.8587 DEBUG Done attempting to validate the bound parameter 'labelId' of type 'System.Int32'.
+2024-03-04 12:22:57.8587 INFO Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-03-04 12:22:57.8766 DEBUG queryContext => new QueryingEnumerable<UserLabel>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserLabel>, 
+    RepositoryLayer.Context.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2024-03-04 12:22:57.8766 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-04 12:22:57.8766 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2024-03-04 12:22:57.8766 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:57.8766 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:57.8766 DEBUG Executing DbCommand [Parameters=[@__labelId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[LabelId], [u].[LabelName], [u].[NoteId], [u].[UserId]
+FROM [UserLabel] AS [u]
+WHERE [u].[LabelId] = @__labelId_0
+2024-03-04 12:22:57.8912 INFO Executed DbCommand (13ms) [Parameters=[@__labelId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[LabelId], [u].[LabelName], [u].[NoteId], [u].[UserId]
+FROM [UserLabel] AS [u]
+WHERE [u].[LabelId] = @__labelId_0
+2024-03-04 12:22:57.8912 DEBUG Context 'FundoContext' started tracking 'UserLabel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:22:57.8912 DEBUG A data reader was disposed.
+2024-03-04 12:22:57.8912 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:57.8912 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:57.8912 DEBUG An 'UserLabel' entity tracked by 'FundoContext' changed from 'Unchanged' to 'Deleted'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:22:57.8912 DEBUG SaveChanges starting for 'FundoContext'.
+2024-03-04 12:22:57.8912 DEBUG DetectChanges starting for 'FundoContext'.
+2024-03-04 12:22:57.8912 DEBUG DetectChanges completed for 'FundoContext'.
+2024-03-04 12:22:57.8912 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:57.8912 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:57.8912 DEBUG Beginning transaction with isolation level 'Unspecified'.
+2024-03-04 12:22:57.8912 DEBUG Began transaction with isolation level 'ReadCommitted'.
+2024-03-04 12:22:57.9089 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-04 12:22:57.9089 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2024-03-04 12:22:57.9089 DEBUG Executing DbCommand [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [UserLabel]
+WHERE [LabelId] = @p0;
+SELECT @@ROWCOUNT;
+2024-03-04 12:22:57.9089 INFO Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [UserLabel]
+WHERE [LabelId] = @p0;
+SELECT @@ROWCOUNT;
+2024-03-04 12:22:57.9089 DEBUG A data reader was disposed.
+2024-03-04 12:22:57.9089 DEBUG Committing transaction.
+2024-03-04 12:22:57.9089 DEBUG Committing transaction.
+2024-03-04 12:22:57.9089 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:57.9089 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:22:57.9089 DEBUG Disposing transaction.
+2024-03-04 12:22:57.9246 DEBUG An 'UserLabel' entity tracked by 'FundoContext' changed from 'Deleted' to 'Detached'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:22:57.9246 DEBUG SaveChanges completed for 'FundoContext' with 1 entities written to the database.
+2024-03-04 12:22:57.9246 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-04 12:22:57.9246 DEBUG No information found on request to perform content negotiation.
+2024-03-04 12:22:57.9246 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-04 12:22:57.9246 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-04 12:22:57.9246 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-04 12:22:57.9246 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[RepositoryLayer.Entity.UserLabel, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-04 12:22:57.9246 INFO Executed action FunDo.Controllers.NoteController.LabelDelete (FunDo) in 64.8238ms
+2024-03-04 12:22:57.9246 INFO Executed endpoint 'FunDo.Controllers.NoteController.LabelDelete (FunDo)'
+2024-03-04 12:22:57.9246 DEBUG 'FundoContext' disposed.
+2024-03-04 12:22:57.9246 INFO Request finished in 83.855ms 200 application/json; charset=utf-8
+2024-03-04 12:23:17.0692 INFO Request starting HTTP/2.0 POST https://localhost:44355/api/Note/getlabels  0
+2024-03-04 12:23:17.0692 INFO Successfully validated the token.
+2024-03-04 12:23:17.0692 DEBUG AuthenticationScheme: Bearer was successfully authenticated.
+2024-03-04 12:23:17.0692 DEBUG POST requests are not supported
+2024-03-04 12:23:17.0692 DEBUG 1 candidate(s) found for the request path '/api/Note/getlabels'
+2024-03-04 12:23:17.0692 DEBUG Endpoint 'FunDo.Controllers.NoteController.GetLabel (FunDo)' with route pattern 'api/Note/getlabels' is valid for the request path '/api/Note/getlabels'
+2024-03-04 12:23:17.0692 DEBUG Request matched endpoint 'FunDo.Controllers.NoteController.GetLabel (FunDo)'
+2024-03-04 12:23:17.0692 INFO Authorization was successful.
+2024-03-04 12:23:17.0692 INFO Executing endpoint 'FunDo.Controllers.NoteController.GetLabel (FunDo)'
+2024-03-04 12:23:17.0783 INFO Route matched with {action = "GetLabel", controller = "Note"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetLabel() on controller FunDo.Controllers.NoteController (FunDo).
+2024-03-04 12:23:17.0783 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-04 12:23:17.0783 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-04 12:23:17.0783 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-04 12:23:17.0783 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-04 12:23:17.0783 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-04 12:23:17.0783 DEBUG Executing controller factory for controller FunDo.Controllers.NoteController (FunDo)
+2024-03-04 12:23:17.0783 DEBUG Executed controller factory for controller FunDo.Controllers.NoteController (FunDo)
+2024-03-04 12:23:17.0783 INFO Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-03-04 12:23:17.1001 DEBUG queryContext => new QueryingEnumerable<UserLabel>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserLabel>, 
+    RepositoryLayer.Context.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+2024-03-04 12:23:17.1001 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-04 12:23:17.1001 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2024-03-04 12:23:17.1001 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:23:17.1001 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:23:17.1001 DEBUG Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[LabelId], [u].[LabelName], [u].[NoteId], [u].[UserId]
+FROM [UserLabel] AS [u]
+WHERE [u].[NoteId] = @__id_0
+2024-03-04 12:23:17.1132 INFO Executed DbCommand (11ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[LabelId], [u].[LabelName], [u].[NoteId], [u].[UserId]
+FROM [UserLabel] AS [u]
+WHERE [u].[NoteId] = @__id_0
+2024-03-04 12:23:17.1132 DEBUG Context 'FundoContext' started tracking 'UserLabel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 12:23:17.1132 DEBUG A data reader was disposed.
+2024-03-04 12:23:17.1132 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:23:17.1132 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 12:23:17.1132 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-04 12:23:17.1132 DEBUG No information found on request to perform content negotiation.
+2024-03-04 12:23:17.1132 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-04 12:23:17.1132 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-04 12:23:17.1132 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-04 12:23:17.1132 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserLabel, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-04 12:23:17.1132 INFO Executed action FunDo.Controllers.NoteController.GetLabel (FunDo) in 42.2433ms
+2024-03-04 12:23:17.1132 INFO Executed endpoint 'FunDo.Controllers.NoteController.GetLabel (FunDo)'
+2024-03-04 12:23:17.1132 DEBUG 'FundoContext' disposed.
+2024-03-04 12:23:17.1132 INFO Request finished in 52.5182ms 200 application/json; charset=utf-8
+2024-03-04 13:12:45.0601 DEBUG Hosting starting
+2024-03-04 13:12:45.2172 INFO User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-04 13:12:45.7668 DEBUG Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-902fbed5-f2be-402c-b834-fdb4cbee8645.xml'.
+2024-03-04 13:12:45.7867 DEBUG Found key {902fbed5-f2be-402c-b834-fdb4cbee8645}.
+2024-03-04 13:12:45.8103 DEBUG Considering key {902fbed5-f2be-402c-b834-fdb4cbee8645} with expiration date 2024-05-27 11:42:30Z as default key.
+2024-03-04 13:12:45.8838 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-04 13:12:45.8995 DEBUG Decrypting secret element using Windows DPAPI.
+2024-03-04 13:12:45.8995 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-04 13:12:45.9060 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-03-04 13:12:45.9060 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-03-04 13:12:45.9060 DEBUG Using key {902fbed5-f2be-402c-b834-fdb4cbee8645} as the default key.
+2024-03-04 13:12:45.9060 DEBUG Key ring with default key {902fbed5-f2be-402c-b834-fdb4cbee8645} was loaded during application startup.
+2024-03-04 13:12:45.9263 DEBUG Starting host: rabbitmq://localhost/
+2024-03-04 13:12:46.1052 DEBUG Connect: guest@localhost:5672/
+2024-03-04 13:12:46.5249 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 57124)
+2024-03-04 13:12:47.1037 DEBUG Loaded hosting startup assembly FunDo
+2024-03-04 13:12:47.1037 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-04 13:12:47.1037 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-04 13:12:47.1037 INFO Application started. Press Ctrl+C to shut down.
+2024-03-04 13:12:47.1037 INFO Hosting environment: Development
+2024-03-04 13:12:47.1037 INFO Content root path: C:\Users\user\Collections\FunDo\FunDo
+2024-03-04 13:12:47.1037 DEBUG Hosting started
+2024-03-04 13:12:47.2108 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2024-03-04 13:12:47.7852 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2024-03-04 13:12:47.9739 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-04 13:12:48.0584 DEBUG Response markup is scheduled to include browser refresh script injection.
+2024-03-04 13:12:48.1308 DEBUG Response markup was updated to include browser refresh script injection.
+2024-03-04 13:12:48.1394 INFO Request finished in 930.6924ms 200 text/html;charset=utf-8
+2024-03-04 13:12:48.2047 INFO Request starting HTTP/2.0 GET https://localhost:44355/_framework/aspnetcore-browser-refresh.js  
+2024-03-04 13:12:48.2047 INFO Request finished in 5.0798ms 200 application/javascript; charset=utf-8
+2024-03-04 13:12:48.2047 INFO Request starting HTTP/2.0 GET https://localhost:44355/_vs/browserLink  
+2024-03-04 13:12:48.6241 INFO Request finished in 411.9462ms 200 text/javascript; charset=UTF-8
+2024-03-04 13:12:48.7329 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2024-03-04 13:12:48.7329 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-04 13:12:48.9606 INFO Request finished in 227.7966ms 200 application/json;charset=utf-8
+2024-03-04 13:13:07.5023 INFO Request starting HTTP/2.0 POST https://localhost:44355/api/User/Log application/json 54
+2024-03-04 13:13:07.5228 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-04 13:13:07.5228 DEBUG POST requests are not supported
+2024-03-04 13:13:07.5745 DEBUG 1 candidate(s) found for the request path '/api/User/Log'
+2024-03-04 13:13:07.5779 DEBUG Endpoint 'FunDoNotes.Controllers.UserController.Login (FunDo)' with route pattern 'api/User/Log' is valid for the request path '/api/User/Log'
+2024-03-04 13:13:07.5779 DEBUG Request matched endpoint 'FunDoNotes.Controllers.UserController.Login (FunDo)'
+2024-03-04 13:13:07.5779 INFO Executing endpoint 'FunDoNotes.Controllers.UserController.Login (FunDo)'
+2024-03-04 13:13:07.5989 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2024-03-04 13:13:07.6492 INFO Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(CommonLayer.RequestModel.Login) on controller FunDoNotes.Controllers.UserController (FunDo).
+2024-03-04 13:13:07.6492 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-04 13:13:07.6492 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-04 13:13:07.6492 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-04 13:13:07.6492 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-04 13:13:07.6492 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-04 13:13:07.6492 DEBUG Executing controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-04 13:13:07.9048 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-03-04 13:13:07.9375 DEBUG Executed controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-04 13:13:07.9375 DEBUG Attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.Login' ...
+2024-03-04 13:13:07.9534 DEBUG Attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.Login' using the name '' in request data ...
+2024-03-04 13:13:07.9534 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-03-04 13:13:07.9692 DEBUG JSON input formatter succeeded, deserializing to type 'CommonLayer.RequestModel.Login'
+2024-03-04 13:13:07.9692 DEBUG Done attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.Login'.
+2024-03-04 13:13:07.9692 DEBUG Done attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.Login'.
+2024-03-04 13:13:07.9692 DEBUG Attempting to validate the bound parameter 'model' of type 'CommonLayer.RequestModel.Login' ...
+2024-03-04 13:13:07.9692 DEBUG Done attempting to validate the bound parameter 'model' of type 'CommonLayer.RequestModel.Login'.
+2024-03-04 13:13:09.2095 INFO Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-03-04 13:13:09.5946 DEBUG queryContext => new QueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, User>, 
+    RepositoryLayer.Context.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2024-03-04 13:13:09.6402 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-04 13:13:09.9774 DEBUG Created DbCommand for 'ExecuteReader' (332ms).
+2024-03-04 13:13:10.0076 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 13:13:10.3065 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 13:13:10.3390 DEBUG Executing DbCommand [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__model_Email_0
+2024-03-04 13:13:10.4505 INFO Executed DbCommand (132ms) [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__model_Email_0
+2024-03-04 13:13:10.5244 DEBUG Context 'FundoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 13:13:10.5708 DEBUG A data reader was disposed.
+2024-03-04 13:13:10.5708 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 13:13:10.5865 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 13:13:11.0435 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-04 13:13:11.0483 DEBUG No information found on request to perform content negotiation.
+2024-03-04 13:13:11.0483 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-04 13:13:11.0483 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-04 13:13:11.0483 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-04 13:13:11.0483 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-04 13:13:11.0656 INFO Executed action FunDoNotes.Controllers.UserController.Login (FunDo) in 3407.8209ms
+2024-03-04 13:13:11.0656 INFO Executed endpoint 'FunDoNotes.Controllers.UserController.Login (FunDo)'
+2024-03-04 13:13:11.0656 DEBUG 'FundoContext' disposed.
+2024-03-04 13:13:11.0833 INFO Request finished in 3581.4623ms 200 application/json; charset=utf-8
+2024-03-04 13:13:43.2022 INFO Request starting HTTP/2.0 GET https://localhost:44355/api/Note/review?noteId=1  
+2024-03-04 13:13:43.3170 INFO Successfully validated the token.
+2024-03-04 13:13:43.3170 DEBUG AuthenticationScheme: Bearer was successfully authenticated.
+2024-03-04 13:13:43.3170 DEBUG The request path  does not match the path filter
+2024-03-04 13:13:43.3170 DEBUG 1 candidate(s) found for the request path '/api/Note/review'
+2024-03-04 13:13:43.3170 DEBUG Endpoint 'FunDo.Controllers.NoteController.GetNotesById (FunDo)' with route pattern 'api/Note/review' is valid for the request path '/api/Note/review'
+2024-03-04 13:13:43.3170 DEBUG Request matched endpoint 'FunDo.Controllers.NoteController.GetNotesById (FunDo)'
+2024-03-04 13:13:43.3377 INFO Authorization was successful.
+2024-03-04 13:13:43.3377 INFO Executing endpoint 'FunDo.Controllers.NoteController.GetNotesById (FunDo)'
+2024-03-04 13:13:43.3439 INFO Route matched with {action = "GetNotesById", controller = "Note"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetNotesById(Int32) on controller FunDo.Controllers.NoteController (FunDo).
+2024-03-04 13:13:43.3439 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-04 13:13:43.3439 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-04 13:13:43.3439 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-04 13:13:43.3439 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-04 13:13:43.3439 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-04 13:13:43.3439 DEBUG Executing controller factory for controller FunDo.Controllers.NoteController (FunDo)
+2024-03-04 13:13:43.3439 DEBUG Executed controller factory for controller FunDo.Controllers.NoteController (FunDo)
+2024-03-04 13:13:43.3439 DEBUG Attempting to bind parameter 'noteId' of type 'System.Int32' ...
+2024-03-04 13:13:43.3576 DEBUG Attempting to bind parameter 'noteId' of type 'System.Int32' using the name 'noteId' in request data ...
+2024-03-04 13:13:43.3576 DEBUG Done attempting to bind parameter 'noteId' of type 'System.Int32'.
+2024-03-04 13:13:43.3576 DEBUG Done attempting to bind parameter 'noteId' of type 'System.Int32'.
+2024-03-04 13:13:43.3576 DEBUG Attempting to validate the bound parameter 'noteId' of type 'System.Int32' ...
+2024-03-04 13:13:43.3576 DEBUG Done attempting to validate the bound parameter 'noteId' of type 'System.Int32'.
+2024-03-04 13:13:43.4193 INFO Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-03-04 13:13:43.4369 DEBUG queryContext => new QueryingEnumerable<NotesEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, NotesEntity>, 
+    RepositoryLayer.Context.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2024-03-04 13:13:43.4369 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-04 13:13:43.4369 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2024-03-04 13:13:43.4369 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 13:13:43.4369 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 13:13:43.4369 DEBUG Executing DbCommand [Parameters=[@__notesId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedAt], [n].[Description], [n].[Image], [n].[IsArchive], [n].[IsPin], [n].[IsTrash], [n].[Reminder], [n].[Title], [n].[UpdatedAt], [n].[UserId]
+FROM [Note] AS [n]
+WHERE [n].[NoteId] = @__notesId_0
+2024-03-04 13:13:43.4611 INFO Executed DbCommand (18ms) [Parameters=[@__notesId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedAt], [n].[Description], [n].[Image], [n].[IsArchive], [n].[IsPin], [n].[IsTrash], [n].[Reminder], [n].[Title], [n].[UpdatedAt], [n].[UserId]
+FROM [Note] AS [n]
+WHERE [n].[NoteId] = @__notesId_0
+2024-03-04 13:13:43.4710 DEBUG Context 'FundoContext' started tracking 'NotesEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-04 13:13:43.4853 DEBUG A data reader was disposed.
+2024-03-04 13:13:43.4853 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 13:13:43.4853 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-04 13:13:43.4853 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-04 13:13:43.4853 DEBUG No information found on request to perform content negotiation.
+2024-03-04 13:13:43.4853 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-04 13:13:43.4853 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-04 13:13:43.4853 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-04 13:13:43.4853 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[RepositoryLayer.Entity.NotesEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-04 13:13:43.4853 INFO Executed action FunDo.Controllers.NoteController.GetNotesById (FunDo) in 152.385ms
+2024-03-04 13:13:43.4853 INFO Executed endpoint 'FunDo.Controllers.NoteController.GetNotesById (FunDo)'
+2024-03-04 13:13:43.4853 DEBUG 'FundoContext' disposed.
+2024-03-04 13:13:43.4853 INFO Request finished in 295.9814ms 200 application/json; charset=utf-8

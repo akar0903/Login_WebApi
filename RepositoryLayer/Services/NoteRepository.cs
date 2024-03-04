@@ -234,5 +234,28 @@ namespace RepositoryLayer.Services
             List<UserLabel> labelEntities = context.UserLabel.Where(x => x.NoteId == id).ToList();
             return labelEntities;
         }
+        public UserLabel LabelDelete(int labelId)
+        {
+            var UserLabel = context.UserLabel.FirstOrDefault(x => ((x.LabelId == labelId)));
+            if (UserLabel != null)
+            {
+                context.UserLabel.Remove(UserLabel);
+                context.SaveChanges();
+            }
+            return UserLabel;
+            throw new Exception("notes did not found");
+        }
+        public NotesEntity GetNotesById(int notesId)
+        {
+            var notesEntity = context.Note.FirstOrDefault(x => x.NoteId == notesId);
+            if (notesEntity != null)
+            {
+                return notesEntity;
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

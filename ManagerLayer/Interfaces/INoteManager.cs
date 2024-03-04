@@ -23,5 +23,8 @@ namespace ManagerLayer.Interfaces
         public UserLabel AddLabel(int UserID, int NoteID, string name);
         public UserLabel UpdateLabel(int NoteID, string name, string newname);
         public List<UserLabel> GetLabel(int id);
+        public UserLabel LabelDelete(int labelId);
+        public NotesEntity GetNotesById(int NoteId);
+
     }
 }

@@ -67,5 +67,13 @@ namespace ManagerLayer.Services
         {
             return repository.GetLabel(id);
         }
+        public UserLabel LabelDelete(int labelId)
+        {
+            return repository.LabelDelete(labelId);
+        }
+        public NotesEntity GetNotesById(int notesId)
+        {
+            return repository.GetNotesById(notesId);
+        }
     }
 }
