@@ -24,7 +24,6 @@ namespace RepositoryLayer.Services
         }
         public NotesEntity NoteCreation(NoteCreationModel model,int id)
         {
-          
             NotesEntity entity = new NotesEntity();
             entity.Title = model.Title;
             entity.Description = model.Description;
@@ -245,17 +244,37 @@ namespace RepositoryLayer.Services
             return UserLabel;
             throw new Exception("notes did not found");
         }
-        public NotesEntity GetNotesById(int notesId)
+        public String GetNotesById(int notesId)
         {
             var notesEntity = context.Note.FirstOrDefault(x => x.NoteId == notesId);
             if (notesEntity != null)
             {
-                return notesEntity;
+                return "Hello";
             }
             else
             {
                 return null;
             }
         }
+        public CollabEntity AddCollab(int noteId,string email, CollabModel model)
+        {
+            var collab = context.UserTable.FirstOrDefault(x => x.Email == email);
+            if (collab != null)
+            {
+                CollabEntity entity = new CollabEntity();
+                entity.CollabId = model.CollabId;
+                entity.NoteId = model.NoteId;
+                entity.CollabEmail = model.CollabEmail;
+                context.Collab.Add(entity);
+                context.SaveChanges();
+                return entity;
+            }
+            else
+            {
+                return null;
+            }
+        }
+        
+        
     }
 }

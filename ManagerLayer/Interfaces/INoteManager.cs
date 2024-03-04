@@ -24,7 +24,8 @@ namespace ManagerLayer.Interfaces
         public UserLabel UpdateLabel(int NoteID, string name, string newname);
         public List<UserLabel> GetLabel(int id);
         public UserLabel LabelDelete(int labelId);
-        public NotesEntity GetNotesById(int NoteId);
+        public String GetNotesById(int NoteId);
+        public CollabEntity AddCollab(int noteid, string email, CollabModel model);
 
     }
 }

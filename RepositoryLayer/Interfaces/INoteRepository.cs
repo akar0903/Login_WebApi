@@ -1,4 +1,5 @@
 ﻿using CommonLayer.RequestModel;
+using Microsoft.AspNetCore.Mvc;
 using RepositoryLayer.Entity;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,8 @@ namespace RepositoryLayer.Interfaces
         public UserLabel UpdateLabel(int NoteID, string name, string newname);
         public List<UserLabel> GetLabel(int id);
         public UserLabel LabelDelete(int labelId);
-        public NotesEntity GetNotesById(int notesId);
+        public String GetNotesById(int notesId);
+        public CollabEntity AddCollab(int noteid, string email, CollabModel model);
 
     }
 }

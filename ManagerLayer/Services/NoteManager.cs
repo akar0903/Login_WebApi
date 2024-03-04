@@ -6,6 +6,7 @@ using System.Text;
 using RepositoryLayer.Interfaces;
 using CommonLayer.RequestModel;
 using ManagerLayer.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ManagerLayer.Services
 {
@@ -71,9 +72,13 @@ namespace ManagerLayer.Services
         {
             return repository.LabelDelete(labelId);
         }
-        public NotesEntity GetNotesById(int notesId)
+        public String GetNotesById(int notesId)
         {
             return repository.GetNotesById(notesId);
+        }
+        public CollabEntity AddCollab(int noteid, string email, CollabModel model)
+        {
+            return repository.AddCollab(noteid, email, model);  
         }
     }
 }

@@ -19,6 +19,46 @@ namespace RepositoryLayer.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("RepositoryLayer.Entity.CollabEntity", b =>
+                {
+                    b.Property<int>("CollabId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CollabEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsTrash")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("NoteId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("NotesEntityNoteId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("NotesUserId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("CollabId");
+
+                    b.HasIndex("NotesEntityNoteId");
+
+                    b.HasIndex("NotesUserId");
+
+                    b.ToTable("Collab");
+                });
+
             modelBuilder.Entity("RepositoryLayer.Entity.NotesEntity", b =>
                 {
                     b.Property<int>("NoteId")
@@ -113,6 +153,17 @@ namespace RepositoryLayer.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("UserLabel");
+                });
+
+            modelBuilder.Entity("RepositoryLayer.Entity.CollabEntity", b =>
+                {
+                    b.HasOne("RepositoryLayer.Entity.NotesEntity", "NotesEntity")
+                        .WithMany()
+                        .HasForeignKey("NotesEntityNoteId");
+
+                    b.HasOne("RepositoryLayer.Entity.User", "NotesUser")
+                        .WithMany()
+                        .HasForeignKey("NotesUserId");
                 });
 
             modelBuilder.Entity("RepositoryLayer.Entity.NotesEntity", b =>

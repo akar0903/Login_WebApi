@@ -319,22 +319,22 @@ namespace FunDo.Controllers
         public ActionResult GetNotesById(int noteId)
         {
             int id = Convert.ToInt32(User.FindFirst("Id").Value);
-            var response = manager.GetNotesById(noteId);
+            String response = manager.GetNotesById(noteId);
             try
             {
                 if (response != null)
                 {
-                    return Ok(new ResModel<NotesEntity> { Success = true, Message = "fetch Successfully", Data = response });
+                    return Ok(new ResModel<String> { Success = true, Message = "fetch Successfully", Data = response });
                 }
                 else
                 {
-                    return BadRequest(new ResModel<NotesEntity> { Success = false, Message = "fetch failed", Data = response });
+                    return BadRequest(new ResModel<String> { Success = false, Message = "fetch failed", Data = response });
                 }
             }
             
             catch (Exception ex)
             {
-                return BadRequest(new ResModel<UserLabel> { Success = false, Message = ex.Message, Data = null });
+                return BadRequest(new ResModel<String> { Success = false, Message = ex.Message, Data = null });
             }
         }
     }
