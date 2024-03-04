@@ -20,5 +20,8 @@ namespace ManagerLayer.Interfaces
         public NotesEntity isPin(int userId, int NotesId);
         public NotesEntity AddRemainder(int notesId, DateTime time);
         public string UploadImage(string fpath, int notesId,int userId);
+        public UserLabel AddLabel(int UserID, int NoteID, string name);
+        public UserLabel UpdateLabel(int NoteID, string name, string newname);
+        public List<UserLabel> GetLabel(int id);
     }
 }

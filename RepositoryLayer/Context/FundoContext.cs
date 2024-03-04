@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RepositoryLayer.Entity;
-using RepositoryLayer.Migrations;
+
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,7 +16,7 @@ namespace RepositoryLayer.Context
 
         public DbSet<User> login { get; set; }
         public DbSet<NotesEntity> Note {  get; set; }
-
+        public DbSet<UserLabel> UserLabel { get; set; }
 
     }
 }

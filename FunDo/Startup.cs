@@ -1,5 +1,7 @@
 using Manager_Layer.Interfaces;
 using Manager_Layer.Services;
+using ManagerLayer.Interfaces;
+using ManagerLayer.Services;
 using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -13,7 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Repository_layer.Services;
+using RepositoryLayer.Services;
 using RepositoryLayer.Context;
 using RepositoryLayer.Interfaces;
 using System;
@@ -21,6 +23,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Repository_Layer.Services;
 
 namespace FunDoNotes
 {
@@ -39,6 +42,9 @@ namespace FunDoNotes
             services.AddDbContext<FundoContext>(a => a.UseSqlServer(Configuration["ConnectionStrings:FunDoDb"]));
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IUserManager, UserManager>();
+            services.AddTransient<INoteRepository, NoteRepository>();
+            services.AddTransient<INoteManager, NotesManager>();
+          
             services.AddControllers();
             services.AddSwaggerGen(option =>
             {

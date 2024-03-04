@@ -6,7 +6,6 @@ using Microsoft.IdentityModel.Tokens;
 using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interfaces;
-using RepositoryLayer.Migrations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,19 +34,20 @@ namespace RepositoryLayer.Services
             entity.IsArchive = false;
             entity.IsPin = false;
             entity.IsTrash = false;
+            entity.UserId = id;
             entity.CreatedAt = DateTime.Now;
             entity.UpdatedAt = DateTime.Now;
             context.Note.Add(entity);
             context.SaveChanges();
             return entity;
         }
-        public List<NotesEntity> Notes(int id)
+        public List<NotesEntity> Notes( int id)
         {
-            return context.Note.Where(x => x.NoteId == id).ToList();
+            List<NotesEntity> notesEntities = context.Note.Where(x => x.UserId == id).ToList();
+            return notesEntities;
         }
         public NotesEntity UpdateNotes(int userId, NoteCreationModel model, int NotesId)
         {
-
             var notesEntity = context.Note.FirstOrDefault(x => ((x.UserId == userId) && (x.NoteId == NotesId)));
 
             if (notesEntity == null)
@@ -196,6 +196,43 @@ namespace RepositoryLayer.Services
             {
                 return null;
             }
+        }
+        public UserLabel AddLabel(int UserID, int NoteID, string name)
+        {
+            var s = context.UserLabel.FirstOrDefault(l => ((l.UserId == UserID)&&(l.NoteId == NoteID) && (!string.IsNullOrEmpty(l.LabelName))));
+            if (s == null)
+            {
+                UserLabel entity = new UserLabel();
+                entity.UserId = UserID;
+                entity.NoteId = NoteID;
+                entity.LabelName = name;
+                context.UserLabel.Add(entity);
+                context.SaveChanges();
+                return entity;
+            }
+            else
+            {
+                throw new Exception("Label already added to the Note");
+            }
+        }
+        public UserLabel UpdateLabel(int NoteID,string name,string newname)
+        {
+            var UserLabel = context.UserLabel.FirstOrDefault(x => ((x.NoteId == NoteID)));
+            if (UserLabel == null)
+            {
+                throw new Exception("Label not found"); 
+            }
+            else
+            {
+                UserLabel.LabelName = newname;
+            }
+            context.SaveChanges();
+            return UserLabel;
+        }
+        public List<UserLabel> GetLabel(int id)
+        {
+            List<UserLabel> labelEntities = context.UserLabel.Where(x => x.NoteId == id).ToList();
+            return labelEntities;
         }
     }
 }

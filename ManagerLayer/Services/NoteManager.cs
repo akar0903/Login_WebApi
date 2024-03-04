@@ -55,5 +55,17 @@ namespace ManagerLayer.Services
         {
             return repository.UploadImage(fpath, notesId,userId);
         }
+        public UserLabel AddLabel(int UserID, int NoteID, string name)
+        {
+            return repository.AddLabel(UserID, NoteID, name);
+        }
+        public UserLabel UpdateLabel(int NoteID,string name,string newname)
+        {
+            return repository.UpdateLabel(NoteID, name, newname);
+        }
+        public List<UserLabel> GetLabel(int id)
+        {
+            return repository.GetLabel(id);
+        }
     }
 }

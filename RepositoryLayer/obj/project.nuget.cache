@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5MiTOyt6qNKch8FBwh8r/YBudOI8vl2hACW8TQJ0zUe9iILUYkbmEU8oXR8UlXwOpsApxg997VUZcIDAObrhPA==",
+  "dgSpecHash": "+S6P1ciHo6iad+uW3s8PP7G41ZERV9MBEortr15k+2ikmjKbalGx9QrUifYifWj7oTnDwCvvPc98hZwviBhvyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Collections\\FunDo\\RepositoryLayer\\RepositoryLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\cloudinarydotnet\\1.26.0\\cloudinarydotnet.1.26.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.0\\microsoft.aspnetcore.authentication.jwtbearer.3.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.0\\microsoft.aspnetcore.cryptography.internal.3.1.0.nupkg.sha512",

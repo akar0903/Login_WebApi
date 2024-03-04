@@ -6,6 +6,7 @@ using MassTransit.Audit;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interfaces;
 using System;
@@ -18,16 +19,19 @@ namespace FunDo.Controllers
     public class NoteController : ControllerBase
     {
         private INoteManager manager;
-        public NoteController(INoteManager manager)
+
+        private readonly FundoContext context;
+        public NoteController(INoteManager manager,FundoContext context)
         {
             this.manager = manager;
+            this.context = context;
         }
         [Authorize]
         [HttpPost]
-        [Route("add")]
-        public ActionResult NoteCreation(NoteCreationModel model)
+        [Route("api/[controller]/note-creation")]
+        public ActionResult NoteCreation([FromBody] NoteCreationModel model)
         {
-            int id = Convert.ToInt32(User.FindFirst("User Id").Value);
+            int id = Convert.ToInt32(User.FindFirst("Id").Value);
             var response = manager.NoteCreation(model, id);
             if (response != null)
             {
@@ -43,11 +47,11 @@ namespace FunDo.Controllers
         [Route("all")]
         public ActionResult All()
         {
-            int id = Convert.ToInt32(User.FindFirst("User Id").Value);
-            var response = manager.Notes(id);
+            int id = Convert.ToInt32(User.FindFirst("Id").Value);
+            List<NotesEntity> response = manager.Notes(id);
             if (response != null)
             {
-                return Ok(new ResModel<List<NotesEntity>> { Success = true, Message = "Created Successfully", Data = response });
+                return Ok(new ResModel<List<NotesEntity>> { Success = true, Message = "Fetched Successfully", Data = response });
             }
             else
             {
@@ -61,7 +65,7 @@ namespace FunDo.Controllers
         {
             try
             {
-                int id = Convert.ToInt32(User.FindFirst("UserId").Value);
+                int id = Convert.ToInt32(User.FindFirst("Id").Value);
                 var response = manager.UpdateNotes(id, model, noteId);
                 if (response != null)
                 {
@@ -84,7 +88,7 @@ namespace FunDo.Controllers
         {
             try
             {
-                int id = Convert.ToInt32(User.FindFirst("UserId").Value);
+                int id = Convert.ToInt32(User.FindFirst("Id").Value);
                 var response = manager.Istrash(id, notesId);
                 if (response != null)
                 {
@@ -104,7 +108,7 @@ namespace FunDo.Controllers
         {
             try
             {
-                int id = Convert.ToInt32(User.FindFirst("UserId").Value);
+                int id = Convert.ToInt32(User.FindFirst("Id").Value);
                 var response = manager.Delete(id, notesId);
                 if (response != null)
                 {
@@ -148,7 +152,7 @@ namespace FunDo.Controllers
         {
             try
             {
-                int id = Convert.ToInt32(User.FindFirst("UserId").Value);
+                int id = Convert.ToInt32(User.FindFirst("Id").Value);
                 var response = manager.IsArchieve(id, notesId);
                 if (response != null)
                 {
@@ -171,7 +175,7 @@ namespace FunDo.Controllers
         {
             try
             {
-                int userId = Convert.ToInt32(User.FindFirst("UserId").Value);
+                int userId = Convert.ToInt32(User.FindFirst("Id").Value);
                 var response = manager.isPin(userId, notesId);
                 if (response != null)
                 {
@@ -194,7 +198,7 @@ namespace FunDo.Controllers
         {
             try
             {
-                int userId = Convert.ToInt32(User.FindFirst("UserId").Value);
+                int userId = Convert.ToInt32(User.FindFirst("Id").Value);
                 var response = manager.AddRemainder(notesId, time);
                 if (response != null)
                 {
@@ -213,13 +217,77 @@ namespace FunDo.Controllers
         public ActionResult Addimage(string fpath, int notesId)
         {
 
-            int userId = Convert.ToInt32(User.FindFirst("UserId").Value);
+            int userId = Convert.ToInt32(User.FindFirst("Id").Value);
             var response = manager.UploadImage(fpath, notesId, userId);
             if (response != null)
             {
                 return Ok(new ResModel<string> { Success = true, Message = "Image uploaded", Data = response });
             }
             return BadRequest(new ResModel<string> { Success = false, Message = "Image uploding failed", Data = response });
+        }
+        [Authorize]
+        [HttpPost]
+        [Route("api/[controller]/add-label")]
+        public ActionResult AddLabel(int NoteID, string LabelName)
+        {
+            try
+            {
+                int id = Convert.ToInt32(User.FindFirst("Id").Value);
+                var response = manager.AddLabel(id, NoteID, LabelName);
+                if (response != null)
+                {
+                    return Ok(new ResModel<UserLabel> { Success = true, Message = "Label Added Successfull", Data = response });
+                }
+                else
+                {
+                    return BadRequest(new ResModel<UserLabel> { Success = false, Message = "Label Adding Failed", Data = null });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ResModel<UserLabel> { Success = false, Message = ex.Message, Data = null });
+            }
+
+        }
+        [Authorize]
+        [HttpPost]
+        [Route("updatelabel")]
+        public ActionResult UpdateLabel(int NoteID, string LabelName,string name)
+        {
+            try
+            {
+                int id = Convert.ToInt32(User.FindFirst("Id").Value);
+                var response = manager.UpdateLabel(NoteID,name, LabelName);
+                if (response != null)
+                {
+                    return Ok(new ResModel<UserLabel> { Success = true, Message = "Label updation successfull", Data = null });
+                }
+                else
+                {
+                    return BadRequest(new ResModel<UserLabel> { Success = false, Message = "Label updation failed", Data = null });
+                }
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(new ResModel<UserLabel> { Success = false, Message = ex.Message, Data = null });
+            }
+        }
+        [Authorize]
+        [HttpPost]
+        [Route("getlabels")]
+        public ActionResult GetLabel()
+        {
+            int id = Convert.ToInt32(User.FindFirst("Id").Value);
+            List<UserLabel> response = manager.GetLabel(id);
+            if (response != null)
+            {
+                return Ok(new ResModel<List<UserLabel>> { Success = true, Message = "Fetched Successfully", Data = response });
+            }
+            else
+            {
+                return BadRequest(new ResModel<List<UserLabel>> { Success = true, Message = "Creation Failed", Data = response });
+            }
+
         }
     }
 }   

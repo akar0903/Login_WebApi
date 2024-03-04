@@ -61,14 +61,12 @@ namespace FunDoNotes.Controllers
                     return BadRequest(new ResModel<string> { Success = false, Message = "Login Failed", Data = response });
                 }
             }
-
             catch (Exception ex)
             {
                 return BadRequest(new ResModel<string> { Success = false, Message = ex.Message, Data = null });
 
             }
         }
-
         [HttpPost]
         [Route("ForgotPassword")]
         public async Task<ActionResult> ForgotPassword(string Email)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FunDo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5712511302cd6075fe3aec9de3446fcdd9e1598b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b63e03e625ebfc8cbf7657a8fcea28834c120558")]
 [assembly: System.Reflection.AssemblyProductAttribute("FunDo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FunDo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

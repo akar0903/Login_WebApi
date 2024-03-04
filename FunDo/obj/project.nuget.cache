@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FfhYR0uHNAlQvAX/V4BoBHWAQiURaW2EFw+UkbK1Q36lmPs7f2mSSgAulADqeZSyM0IUBM5rsCYVtJqXq2ogxA==",
+  "dgSpecHash": "lfHPefTJI7DorcKIyDWUmMVZvFznNKCBJ9LFGA/Y1nPfbmyj+8snAVEY2r0IZjJ7xvh4NTAivuutfB0WH1u5ng==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Collections\\FunDo\\FunDo\\FunDo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automatonymous\\4.2.1\\automatonymous.4.2.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\cloudinarydotnet\\1.26.0\\cloudinarydotnet.1.26.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\greenpipes\\3.0.1\\greenpipes.3.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\masstransit\\6.2.5\\masstransit.6.2.5.nupkg.sha512",

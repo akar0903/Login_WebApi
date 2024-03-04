@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "RepositoryLayer/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "CloudinaryDotNet": "1.26.0",
           "CommonLayer": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.0",
@@ -21,6 +22,14 @@
         },
         "runtime": {
           "RepositoryLayer.dll": {}
+        }
+      },
+      "BCrypt.Net-Next/4.0.3": {
+        "runtime": {
+          "lib/netstandard2.1/BCrypt.Net-Next.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.0.3.0"
+          }
         }
       },
       "CloudinaryDotNet/1.26.0": {
@@ -1131,6 +1140,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BCrypt.Net-Next/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "path": "bcrypt.net-next/4.0.3",
+      "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
     },
     "CloudinaryDotNet/1.26.0": {
       "type": "package",
