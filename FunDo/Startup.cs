@@ -44,7 +44,8 @@ namespace FunDoNotes
             services.AddTransient<IUserManager, UserManager>();
             services.AddTransient<INoteRepository, NoteRepository>();
             services.AddTransient<INoteManager, NotesManager>();
-          
+            services.AddStackExchangeRedisCache(options => { options.Configuration = Configuration["RedisCacheUrl"]; });
+
             services.AddControllers();
             services.AddSwaggerGen(option =>
             {

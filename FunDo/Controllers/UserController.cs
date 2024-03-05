@@ -1,17 +1,22 @@
 ﻿using CommonLayer.RequestModel;
 using CommonLayer.ResponseModel;
+using GreenPipes.Caching;
 using Manager_Layer.Interfaces;
 using MassTransit;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Linq;
 using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
+using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 namespace FunDoNotes.Controllers
 {
@@ -22,13 +27,16 @@ namespace FunDoNotes.Controllers
         private readonly IUserManager userManager;
         private readonly FundoContext context1;
         private readonly IBus bus;
+        private readonly IDistributedCache _cache;
         private readonly ILogger<UserController> logger;    
-        public UserController(IUserManager userManager, IBus bus, FundoContext context1, ILogger<UserController> logger)
+       
+        public UserController(IUserManager userManager, IBus bus, FundoContext context1, ILogger<UserController> logger, IDistributedCache _cache)
         {
             this.userManager = userManager;
             this.bus = bus;
             this.context1 = context1;
             this.logger = logger;
+            this._cache = _cache;
         }
         [HttpPost]
         [Route("Reg")]
@@ -110,6 +118,41 @@ namespace FunDoNotes.Controllers
             {
                 throw ex;
             }
+        }
+        [HttpGet]
+        [Route("GetAll/{Id}/{enableCache}")]
+        public async Task<List<User>> GetAll(int Id)
+        {
+           
+            string cacheKey = Id.ToString();
+
+            // Trying to get data from the Redis cache
+            byte[] cachedData = await _cache.GetAsync(cacheKey);
+            List<User> articleMatrices = new List<User>();
+            if (cachedData != null)
+            {
+                // If the data is found in the cache, encode and deserialize cached data.
+                var cachedDataString = Encoding.UTF8.GetString(cachedData);
+                articleMatrices = JsonSerializer.Deserialize<List<User>>(cachedDataString);
+            }
+            else
+            {
+                // If the data is not found in the cache, then fetch data from database
+                articleMatrices = context1.UserTable.Where(x => x.Id == Id).OrderByDescending(x => x.FirstName).ToList();
+
+                // Serializing the data
+                string cachedDataString = JsonSerializer.Serialize(articleMatrices);
+                var dataToCache = Encoding.UTF8.GetBytes(cachedDataString);
+
+                // Setting up the cache options
+                DistributedCacheEntryOptions options = new DistributedCacheEntryOptions()
+                    .SetAbsoluteExpiration(DateTime.Now.AddMinutes(5))
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(3));
+
+                // Add the data into the cache
+                await _cache.SetAsync(cacheKey, dataToCache, options);
+            }
+            return articleMatrices;
         }
     }
 }
