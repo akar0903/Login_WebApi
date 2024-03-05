@@ -256,15 +256,14 @@ namespace RepositoryLayer.Services
                 return null;
             }
         }
-        public CollabEntity AddCollab(int noteId,string email, CollabModel model)
+        public CollabEntity AddCollab(int noteId,string email)
         {
             var collab = context.UserTable.FirstOrDefault(x => x.Email == email);
             if (collab != null)
             {
                 CollabEntity entity = new CollabEntity();
-                entity.CollabId = model.CollabId;
-                entity.NoteId = model.NoteId;
-                entity.CollabEmail = model.CollabEmail;
+                entity.NoteId = noteId;
+                entity.CollabEmail = email;
                 context.Collab.Add(entity);
                 context.SaveChanges();
                 return entity;
@@ -284,6 +283,28 @@ namespace RepositoryLayer.Services
             }
             return collab;
             throw new Exception("collab did not found");
+        }
+        public List<CollabEntity> GetCollab(int noteId,int collabid)
+        {
+            
+            return context.Collab.Where(x => x.NoteId == noteId && x.CollabId==collabid).ToList();
+        }
+        public CollabEntity Trashcollab(int noteId) {
+            var collabEntity = context.Collab.FirstOrDefault(x => x.NoteId == noteId);
+            if (collabEntity != null)
+            {
+                if (collabEntity.IsTrash)
+                {
+                    collabEntity.IsTrash = false;
+                }
+                else
+                {
+                    collabEntity.IsTrash = true;
+                }
+                context.SaveChanges();
+                return collabEntity;
+            }
+            throw new Exception("notes are not found");
         }
     }
 }

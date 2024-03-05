@@ -76,13 +76,21 @@ namespace ManagerLayer.Services
         {
             return repository.GetNotesById(notesId);
         }
-        public CollabEntity AddCollab(int noteid, string email, CollabModel model)
+        public CollabEntity AddCollab(int noteid, string email)
         {
-            return repository.AddCollab(noteid, email, model);  
+            return repository.AddCollab(noteid, email);  
         }
         public CollabEntity RemoveCollab(int noteId, string email)
         {
             return repository.RemoveCollab(noteId, email);
+        }
+        public List<CollabEntity> GetCollab(int noteId, int collabid)
+        {
+            return repository.GetCollab(noteId, collabid);
+        }
+        public CollabEntity Trashcollab(int noteId)
+        {
+            return repository.Trashcollab(noteId);
         }
     }
 }

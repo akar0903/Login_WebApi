@@ -27,8 +27,10 @@ namespace RepositoryLayer.Interfaces
         public List<UserLabel> GetLabel(int id);
         public UserLabel LabelDelete(int labelId);
         public String GetNotesById(int notesId);
-        public CollabEntity AddCollab(int noteid, string email, CollabModel model);
+        public CollabEntity AddCollab(int noteid, string email);
         public CollabEntity RemoveCollab(int noteId, string email);
+        public List<CollabEntity> GetCollab(int noteId, int collabid);
+        public CollabEntity Trashcollab(int noteId);
 
     }
 }
