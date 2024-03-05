@@ -274,7 +274,16 @@ namespace RepositoryLayer.Services
                 return null;
             }
         }
-        
-        
+        public CollabEntity RemoveCollab(int noteId,string email)
+        {
+            var collab = context.Collab.FirstOrDefault(x=>x.CollabEmail==email);
+            if (collab != null)
+            {
+                context.Collab.Remove(collab);
+                context.SaveChanges();
+            }
+            return collab;
+            throw new Exception("collab did not found");
+        }
     }
 }

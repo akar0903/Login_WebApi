@@ -80,5 +80,9 @@ namespace ManagerLayer.Services
         {
             return repository.AddCollab(noteid, email, model);  
         }
+        public CollabEntity RemoveCollab(int noteId, string email)
+        {
+            return repository.RemoveCollab(noteId, email);
+        }
     }
 }

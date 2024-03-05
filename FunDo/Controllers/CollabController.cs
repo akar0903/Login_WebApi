@@ -37,6 +37,29 @@ namespace FunDo.Controllers
                 return BadRequest(new ResModel<CollabEntity> { Success = true, Message = "Not added", Data = response });
             }
         }
+        [Authorize]
+        [HttpDelete]
+        [Route("RemoveCollab")]
+        public ActionResult RemoveCollab(int noteId,string email)
+        {
+            try
+            {
+                int id = Convert.ToInt32(User.FindFirst("Id").Value);
+                var response = manager.RemoveCollab(noteId,email);
+                if (response != null)
+                {
+                    return Ok(new ResModel<CollabEntity> { Success = true, Message = "Deleted Successfully", Data = response });
+                }
+                else
+                {
+                    return BadRequest(new ResModel<CollabEntity> { Success = false, Message = "Deletion failed", Data = response });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ResModel<CollabEntity> { Success = false, Message = ex.Message, Data = null });
+            }
+        }
 
     }
 }
