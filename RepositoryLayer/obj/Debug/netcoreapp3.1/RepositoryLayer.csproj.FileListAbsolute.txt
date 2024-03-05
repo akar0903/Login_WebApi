@@ -14,3 +14,4 @@ C:\Users\user\Collections\FunDo\RepositoryLayer\obj\Debug\netcoreapp3.1\Reposito
 C:\Users\user\Collections\FunDo\RepositoryLayer\bin\Debug\netcoreapp3.1\CommonLayer.dll
 C:\Users\user\Collections\FunDo\RepositoryLayer\bin\Debug\netcoreapp3.1\CommonLayer.pdb
 C:\Users\user\Collections\FunDo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.CopyComplete
+C:\Users\user\Collections\FunDo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.sourcelink.json

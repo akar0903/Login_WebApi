@@ -13,3 +13,4 @@ C:\Users\user\Collections\FunDo\ManagerLayer\bin\Debug\netcoreapp3.1\RepositoryL
 C:\Users\user\Collections\FunDo\ManagerLayer\bin\Debug\netcoreapp3.1\CommonLayer.pdb
 C:\Users\user\Collections\FunDo\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerLayer.csproj.AssemblyReference.cache
 C:\Users\user\Collections\FunDo\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerLayer.csproj.CopyComplete
+C:\Users\user\Collections\FunDo\ManagerLayer\obj\Debug\netcoreapp3.1\ManagerLayer.sourcelink.json
