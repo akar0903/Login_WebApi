@@ -2,6 +2,7 @@
 using Manager_Layer.Interfaces;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interfaces;
+using System.Collections.Generic;
 
 namespace Manager_Layer.Services
 {
@@ -35,6 +36,14 @@ namespace Manager_Layer.Services
         public bool ResetPassword(string Email, ResetPasswordModel model)
         {
             return repository.ResetPassword(Email, model);
+        }
+        public User IsUserThere(RegisterModel model, int id)
+        {
+            return repository.IsUserThere(model, id);
+        }
+        public List<User> SearchUser(string name)
+        {
+            return repository.SearchUser(name);
         }
     }
 }

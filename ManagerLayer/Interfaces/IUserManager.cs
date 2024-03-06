@@ -15,5 +15,7 @@ namespace Manager_Layer.Interfaces
         public string GenerateToken(string Email, int Id);
         public bool IsEmailAlreadyRegistered(string email);
         public bool ResetPassword(string Email, ResetPasswordModel model);
+        public User IsUserThere(RegisterModel model, int id);
+        public List<User> SearchUser(string name);
     }
 }

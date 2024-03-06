@@ -41,20 +41,14 @@ namespace RepositoryLayer.Migrations
                     b.Property<int>("NoteId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("NotesEntityNoteId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NotesUserId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("CollabId");
 
-                    b.HasIndex("NotesEntityNoteId");
+                    b.HasIndex("Id");
 
-                    b.HasIndex("NotesUserId");
+                    b.HasIndex("NoteId");
 
                     b.ToTable("Collab");
                 });
@@ -157,13 +151,17 @@ namespace RepositoryLayer.Migrations
 
             modelBuilder.Entity("RepositoryLayer.Entity.CollabEntity", b =>
                 {
-                    b.HasOne("RepositoryLayer.Entity.NotesEntity", "NotesEntity")
-                        .WithMany()
-                        .HasForeignKey("NotesEntityNoteId");
-
                     b.HasOne("RepositoryLayer.Entity.User", "NotesUser")
                         .WithMany()
-                        .HasForeignKey("NotesUserId");
+                        .HasForeignKey("Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RepositoryLayer.Entity.NotesEntity", "NotesEntity")
+                        .WithMany()
+                        .HasForeignKey("NoteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("RepositoryLayer.Entity.NotesEntity", b =>

@@ -14,6 +14,10 @@ namespace RepositoryLayer.Interfaces
         public string GenerateToken(string email, int id);
         public bool ResetPassword(string Email, ResetPasswordModel resetPasswordModel);
         public bool IsEmailAlreadyRegistered(string email);
-       
+        public User IsUserThere(RegisterModel model, int id);
+
+        public List<User> SearchUser(string name);
+
+
     }
 }
