@@ -154,5 +154,43 @@ namespace FunDoNotes.Controllers
             }
             return articleMatrices;
         }
+       
+        [HttpPost]
+        [Route("CheckUserReview")]
+        public ActionResult IsUserThere(RegisterModel model,int id)
+        {
+                var response = userManager.IsUserThere(model,id);
+                if (response!=null)
+                {
+                    return Ok(new ResModel<User> { Success = true, Message = "User is there", Data = response });
+                }
+                else
+                {
+                    return BadRequest(new ResModel<User> { Success = false, Message = "No User is there", Data = response});
+                }
+        }
+      
+        [HttpGet]
+        [Route("UserDetailsReview")]
+        public ActionResult Searchuser(string name)
+        {
+            try
+            {
+                List<User> response = userManager.SearchUser(name);
+                if (response != null)
+                {
+                    return Ok(new ResModel<List<User>> { Success = true, Message = "Display Success", Data = response });
+                }
+                else
+                {
+                    return BadRequest(new ResModel<List<User>> { Success = false, Message = "Display Failure", Data = response });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ResModel<List<User>> { Success = false, Message = ex.Message, Data = null });
+            }
+        }
+        
     }
 }

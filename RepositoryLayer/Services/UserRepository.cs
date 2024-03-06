@@ -163,6 +163,21 @@ namespace Repository_Layer.Services
         {
             return context.UserTable.Any(u => u.Email == email);
         }
+        public User IsUserThere(RegisterModel model, int id)
+        {
+            var user = context.UserTable.FirstOrDefault(c=>c.Id == id);
+            if (user != null)
+            {
+                user.FirstName = model.FirstName;
+                user.LastName = model.LastName;
+                context.SaveChanges();
+            }
+                return user;
+        }
+        public List<User> SearchUser(string name)
+        {
+            return context.UserTable.Where(x => x.FirstName == name).ToList();
+        }
     }
 
 }

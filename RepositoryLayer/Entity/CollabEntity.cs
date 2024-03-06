@@ -17,11 +17,11 @@ namespace RepositoryLayer.Entity
         public DateTime UpdatedAt { get; set; }
         public string CollabEmail { get; set; }
         public bool IsTrash { get; set; }
-        [ForeignKey("NoteUser")]
+        [ForeignKey("NotesUser")]
         public int Id {  get; set; }
         [JsonIgnore]
         public virtual User NotesUser {  get; set; }
-        [ForeignKey("NoteEntity")]
+        [ForeignKey("NotesEntity")]
         public int NoteId {  get; set; }
         [JsonIgnore] 
         public virtual NotesEntity NotesEntity { get; set; }
