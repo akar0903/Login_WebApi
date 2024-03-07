@@ -17,5 +17,6 @@ namespace Manager_Layer.Interfaces
         public bool ResetPassword(string Email, ResetPasswordModel model);
         public User IsUserThere(RegisterModel model, int id);
         public List<User> SearchUser(string name);
+        public List<User> OddUser(int id);
     }
 }

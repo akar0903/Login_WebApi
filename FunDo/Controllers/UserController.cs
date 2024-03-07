@@ -191,6 +191,28 @@ namespace FunDoNotes.Controllers
                 return BadRequest(new ResModel<List<User>> { Success = false, Message = ex.Message, Data = null });
             }
         }
+        [HttpGet]
+        [Route("OddUserGet")]
+        public ActionResult OddUser()
+        {
+            try
+            {
+                int id = Convert.ToInt32(User.FindFirst("Id").Value);
+                List<User> response = userManager.OddUser(id);
+                if(response!=null)
+                {
+                    return Ok(new ResModel<List<User>> { Success = true, Message = "Display Success", Data = response });
+                }
+                else
+                {
+                    return BadRequest(new ResModel<List<User>> { Success = false, Message = "Display fail", Data = response });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ResModel<List<User>> { Success = false, Message = ex.Message, Data = null });
+            }
+        }
         
     }
 }

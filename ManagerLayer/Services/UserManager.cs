@@ -45,5 +45,9 @@ namespace Manager_Layer.Services
         {
             return repository.SearchUser(name);
         }
+        public List<User> OddUser(int id)
+        {
+            return repository.OddUser(id);
+        }
     }
 }

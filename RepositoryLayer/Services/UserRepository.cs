@@ -15,6 +15,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Diagnostics.Eventing.Reader;
 using CommonLayer.ResponseModel;
 using RepositoryLayer.Interfaces;
+using System.Xml.Linq;
 
 namespace Repository_Layer.Services
 {
@@ -52,9 +53,6 @@ namespace Repository_Layer.Services
                 return entity;
             }
         }
-
-
-
         public string Encrypt(string password)
         {
             if (string.IsNullOrEmpty(password))
@@ -177,6 +175,16 @@ namespace Repository_Layer.Services
         public List<User> SearchUser(string name)
         {
             return context.UserTable.Where(x => x.FirstName == name).ToList();
+        }
+        public List<User> OddUser(int id)
+        {
+            if (id % 2 != 0)
+            {
+                List<User> userEntities = context.UserTable.Where(x => x.Id == id).ToList();
+                return userEntities;
+            }
+            return null;
+                
         }
     }
 
