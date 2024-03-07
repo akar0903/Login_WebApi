@@ -746,3 +746,605 @@ WHERE [u].[FirstName] = @__name_0
 2024-03-06 12:13:28.9782 INFO Executed endpoint 'FunDoNotes.Controllers.UserController.Searchuser (FunDo)'
 2024-03-06 12:13:28.9782 DEBUG 'FundoContext' disposed.
 2024-03-06 12:13:28.9782 INFO Request finished in 156.735ms 200 application/json; charset=utf-8
+2024-03-06 21:37:42.7951 DEBUG Hosting starting
+2024-03-06 21:37:43.1036 INFO User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-06 21:37:44.2327 DEBUG Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-902fbed5-f2be-402c-b834-fdb4cbee8645.xml'.
+2024-03-06 21:37:44.2806 DEBUG Found key {902fbed5-f2be-402c-b834-fdb4cbee8645}.
+2024-03-06 21:37:44.3062 DEBUG Considering key {902fbed5-f2be-402c-b834-fdb4cbee8645} with expiration date 2024-05-27 11:42:30Z as default key.
+2024-03-06 21:37:44.3814 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 21:37:44.3814 DEBUG Decrypting secret element using Windows DPAPI.
+2024-03-06 21:37:44.3814 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 21:37:44.4055 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-03-06 21:37:44.4107 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-03-06 21:37:44.4107 DEBUG Using key {902fbed5-f2be-402c-b834-fdb4cbee8645} as the default key.
+2024-03-06 21:37:44.4107 DEBUG Key ring with default key {902fbed5-f2be-402c-b834-fdb4cbee8645} was loaded during application startup.
+2024-03-06 21:37:44.4280 DEBUG Starting host: rabbitmq://localhost/
+2024-03-06 21:37:44.5523 DEBUG Connect: guest@localhost:5672/
+2024-03-06 21:37:44.9923 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52759)
+2024-03-06 21:37:45.4500 DEBUG Loaded hosting startup assembly FunDo
+2024-03-06 21:37:45.4500 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-06 21:37:45.4500 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-06 21:37:45.4500 INFO Application started. Press Ctrl+C to shut down.
+2024-03-06 21:37:45.4500 INFO Hosting environment: Development
+2024-03-06 21:37:45.4500 INFO Content root path: C:\Users\user\Collections\FunDo\FunDo
+2024-03-06 21:37:45.4578 DEBUG Hosting started
+2024-03-06 21:37:45.5248 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2024-03-06 21:37:45.7176 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2024-03-06 21:37:45.8161 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:37:45.9122 DEBUG Response markup is scheduled to include browser refresh script injection.
+2024-03-06 21:37:46.0228 DEBUG Response markup was updated to include browser refresh script injection.
+2024-03-06 21:37:46.0410 INFO Request finished in 519.0709ms 200 text/html;charset=utf-8
+2024-03-06 21:37:46.1088 INFO Request starting HTTP/2.0 GET https://localhost:44355/_vs/browserLink  
+2024-03-06 21:37:46.1088 INFO Request starting HTTP/2.0 GET https://localhost:44355/_framework/aspnetcore-browser-refresh.js  
+2024-03-06 21:37:46.1215 INFO Request finished in 12.6267ms 200 application/javascript; charset=utf-8
+2024-03-06 21:37:46.2155 INFO Request finished in 106.698ms 200 text/javascript; charset=UTF-8
+2024-03-06 21:37:46.5879 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2024-03-06 21:37:46.6183 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:37:46.8750 INFO Request finished in 287.5017ms 200 application/json;charset=utf-8
+2024-03-06 21:41:58.7708 DEBUG Hosting starting
+2024-03-06 21:41:58.9269 INFO User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-06 21:41:59.4896 DEBUG Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-902fbed5-f2be-402c-b834-fdb4cbee8645.xml'.
+2024-03-06 21:41:59.5121 DEBUG Found key {902fbed5-f2be-402c-b834-fdb4cbee8645}.
+2024-03-06 21:41:59.5348 DEBUG Considering key {902fbed5-f2be-402c-b834-fdb4cbee8645} with expiration date 2024-05-27 11:42:30Z as default key.
+2024-03-06 21:41:59.6978 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 21:41:59.7091 DEBUG Decrypting secret element using Windows DPAPI.
+2024-03-06 21:41:59.7091 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 21:41:59.7091 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-03-06 21:41:59.7255 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-03-06 21:41:59.7255 DEBUG Using key {902fbed5-f2be-402c-b834-fdb4cbee8645} as the default key.
+2024-03-06 21:41:59.7255 DEBUG Key ring with default key {902fbed5-f2be-402c-b834-fdb4cbee8645} was loaded during application startup.
+2024-03-06 21:41:59.7474 DEBUG Starting host: rabbitmq://localhost/
+2024-03-06 21:41:59.8640 DEBUG Connect: guest@localhost:5672/
+2024-03-06 21:42:00.3794 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52788)
+2024-03-06 21:42:00.5819 DEBUG Loaded hosting startup assembly FunDo
+2024-03-06 21:42:00.5819 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-06 21:42:00.5819 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-06 21:42:00.5823 INFO Application started. Press Ctrl+C to shut down.
+2024-03-06 21:42:00.5823 INFO Hosting environment: Development
+2024-03-06 21:42:00.5823 INFO Content root path: C:\Users\user\Collections\FunDo\FunDo
+2024-03-06 21:42:00.5823 DEBUG Hosting started
+2024-03-06 21:42:00.6461 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2024-03-06 21:42:00.8436 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2024-03-06 21:42:00.9820 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:42:01.0650 DEBUG Response markup is scheduled to include browser refresh script injection.
+2024-03-06 21:42:01.1251 DEBUG Response markup was updated to include browser refresh script injection.
+2024-03-06 21:42:01.1335 INFO Request starting HTTP/2.0 GET https://localhost:44355/_framework/aspnetcore-browser-refresh.js  
+2024-03-06 21:42:01.1335 INFO Request finished in 487.4321ms 200 text/html;charset=utf-8
+2024-03-06 21:42:01.1651 INFO Request starting HTTP/2.0 GET https://localhost:44355/_vs/browserLink  
+2024-03-06 21:42:01.1651 INFO Request finished in 37.4258ms 200 application/javascript; charset=utf-8
+2024-03-06 21:42:01.2759 INFO Request finished in 110.7856ms 200 text/javascript; charset=UTF-8
+2024-03-06 21:42:01.5619 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2024-03-06 21:42:01.5619 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:42:01.8155 INFO Request finished in 253.7359ms 200 application/json;charset=utf-8
+2024-03-06 21:45:50.0900 DEBUG Hosting starting
+2024-03-06 21:45:50.2372 INFO User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-06 21:45:50.6632 DEBUG Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-902fbed5-f2be-402c-b834-fdb4cbee8645.xml'.
+2024-03-06 21:45:50.6788 DEBUG Found key {902fbed5-f2be-402c-b834-fdb4cbee8645}.
+2024-03-06 21:45:50.6965 DEBUG Considering key {902fbed5-f2be-402c-b834-fdb4cbee8645} with expiration date 2024-05-27 11:42:30Z as default key.
+2024-03-06 21:45:50.7560 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 21:45:50.7560 DEBUG Decrypting secret element using Windows DPAPI.
+2024-03-06 21:45:50.7560 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 21:45:50.7560 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-03-06 21:45:50.7730 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-03-06 21:45:50.7730 DEBUG Using key {902fbed5-f2be-402c-b834-fdb4cbee8645} as the default key.
+2024-03-06 21:45:50.7730 DEBUG Key ring with default key {902fbed5-f2be-402c-b834-fdb4cbee8645} was loaded during application startup.
+2024-03-06 21:45:50.7857 DEBUG Starting host: rabbitmq://localhost/
+2024-03-06 21:45:50.9431 DEBUG Connect: guest@localhost:5672/
+2024-03-06 21:45:51.2173 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52813)
+2024-03-06 21:45:51.3566 DEBUG Loaded hosting startup assembly FunDo
+2024-03-06 21:45:51.3566 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-06 21:45:51.3566 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-06 21:45:51.3566 INFO Application started. Press Ctrl+C to shut down.
+2024-03-06 21:45:51.3566 INFO Hosting environment: Development
+2024-03-06 21:45:51.3566 INFO Content root path: C:\Users\user\Collections\FunDo\FunDo
+2024-03-06 21:45:51.3566 DEBUG Hosting started
+2024-03-06 21:45:51.4053 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2024-03-06 21:45:51.5160 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2024-03-06 21:45:51.7693 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:45:51.8464 DEBUG Response markup is scheduled to include browser refresh script injection.
+2024-03-06 21:45:51.8969 DEBUG Response markup was updated to include browser refresh script injection.
+2024-03-06 21:45:51.8969 INFO Request finished in 496.0199ms 200 text/html;charset=utf-8
+2024-03-06 21:45:51.9438 INFO Request starting HTTP/2.0 GET https://localhost:44355/_framework/aspnetcore-browser-refresh.js  
+2024-03-06 21:45:51.9438 INFO Request starting HTTP/2.0 GET https://localhost:44355/_vs/browserLink  
+2024-03-06 21:45:51.9691 INFO Request finished in 25.363ms 200 application/javascript; charset=utf-8
+2024-03-06 21:45:52.0386 INFO Request finished in 94.6693ms 200 text/javascript; charset=UTF-8
+2024-03-06 21:45:52.1606 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2024-03-06 21:45:52.1606 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:45:52.3730 INFO Request finished in 212.4022ms 200 application/json;charset=utf-8
+2024-03-06 21:46:09.1823 INFO Request starting HTTP/2.0 GET https://localhost:44355/api/User/OddUserGet?id=1  
+2024-03-06 21:46:09.1823 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:46:09.1918 DEBUG The request path  does not match the path filter
+2024-03-06 21:46:09.2496 DEBUG 1 candidate(s) found for the request path '/api/User/OddUserGet'
+2024-03-06 21:46:09.2496 DEBUG Endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)' with route pattern 'api/User/OddUserGet' is valid for the request path '/api/User/OddUserGet'
+2024-03-06 21:46:09.2550 DEBUG Request matched endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:46:09.2550 INFO Executing endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:46:09.2711 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2024-03-06 21:46:09.3221 INFO Route matched with {action = "OddUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult OddUser(Int32) on controller FunDoNotes.Controllers.UserController (FunDo).
+2024-03-06 21:46:09.3221 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-06 21:46:09.3221 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-06 21:46:09.3221 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-06 21:46:09.3221 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-06 21:46:09.3221 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-06 21:46:09.3221 DEBUG Executing controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 21:46:09.7144 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-03-06 21:46:09.7542 DEBUG Executed controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 21:46:09.7542 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2024-03-06 21:46:09.7714 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2024-03-06 21:46:09.7714 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-03-06 21:46:09.7714 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-03-06 21:46:09.7714 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2024-03-06 21:46:09.7714 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2024-03-06 21:46:10.8751 INFO Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-03-06 21:46:11.3039 DEBUG queryContext => new QueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, User>, 
+    RepositoryLayer.Context.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+2024-03-06 21:46:11.3606 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-06 21:46:11.6112 DEBUG Created DbCommand for 'ExecuteReader' (246ms).
+2024-03-06 21:46:11.6387 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:46:11.8821 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:46:11.9056 DEBUG Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__id_0
+2024-03-06 21:46:12.0943 INFO Executed DbCommand (196ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__id_0
+2024-03-06 21:46:12.1607 DEBUG Context 'FundoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-06 21:46:12.2000 DEBUG A data reader was disposed.
+2024-03-06 21:46:12.2000 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:46:12.2112 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:46:12.2112 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-06 21:46:12.2112 DEBUG No information found on request to perform content negotiation.
+2024-03-06 21:46:12.2112 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-06 21:46:12.2112 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-06 21:46:12.2112 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-06 21:46:12.2112 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[System.Collections.Generic.List`1[[RepositoryLayer.Entity.User, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-06 21:46:12.2360 INFO Executed action FunDoNotes.Controllers.UserController.OddUser (FunDo) in 2908.284ms
+2024-03-06 21:46:12.2360 INFO Executed endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:46:12.2360 DEBUG 'FundoContext' disposed.
+2024-03-06 21:46:12.2410 INFO Request finished in 3059.0662ms 200 application/json; charset=utf-8
+2024-03-06 21:47:28.2914 DEBUG Hosting starting
+2024-03-06 21:47:28.4787 INFO User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-06 21:47:28.8938 DEBUG Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-902fbed5-f2be-402c-b834-fdb4cbee8645.xml'.
+2024-03-06 21:47:28.9041 DEBUG Found key {902fbed5-f2be-402c-b834-fdb4cbee8645}.
+2024-03-06 21:47:28.9191 DEBUG Considering key {902fbed5-f2be-402c-b834-fdb4cbee8645} with expiration date 2024-05-27 11:42:30Z as default key.
+2024-03-06 21:47:28.9856 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 21:47:28.9962 DEBUG Decrypting secret element using Windows DPAPI.
+2024-03-06 21:47:28.9962 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 21:47:29.0061 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-03-06 21:47:29.0061 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-03-06 21:47:29.0061 DEBUG Using key {902fbed5-f2be-402c-b834-fdb4cbee8645} as the default key.
+2024-03-06 21:47:29.0061 DEBUG Key ring with default key {902fbed5-f2be-402c-b834-fdb4cbee8645} was loaded during application startup.
+2024-03-06 21:47:29.0277 DEBUG Starting host: rabbitmq://localhost/
+2024-03-06 21:47:29.1394 DEBUG Connect: guest@localhost:5672/
+2024-03-06 21:47:29.6270 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52834)
+2024-03-06 21:47:29.7115 DEBUG Loaded hosting startup assembly FunDo
+2024-03-06 21:47:29.7115 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-06 21:47:29.7115 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-06 21:47:29.7115 INFO Application started. Press Ctrl+C to shut down.
+2024-03-06 21:47:29.7115 INFO Hosting environment: Development
+2024-03-06 21:47:29.7115 INFO Content root path: C:\Users\user\Collections\FunDo\FunDo
+2024-03-06 21:47:29.7115 DEBUG Hosting started
+2024-03-06 21:47:29.7729 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2024-03-06 21:47:29.9680 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2024-03-06 21:47:30.0774 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:47:30.1789 DEBUG Response markup is scheduled to include browser refresh script injection.
+2024-03-06 21:47:30.2485 DEBUG Response markup was updated to include browser refresh script injection.
+2024-03-06 21:47:30.2485 INFO Request finished in 483.4075ms 200 text/html;charset=utf-8
+2024-03-06 21:47:30.3271 INFO Request starting HTTP/2.0 GET https://localhost:44355/_vs/browserLink  
+2024-03-06 21:47:30.3443 INFO Request starting HTTP/2.0 GET https://localhost:44355/_framework/aspnetcore-browser-refresh.js  
+2024-03-06 21:47:30.3527 INFO Request finished in 8.4054ms 200 application/javascript; charset=utf-8
+2024-03-06 21:47:30.4359 INFO Request finished in 108.8303ms 200 text/javascript; charset=UTF-8
+2024-03-06 21:47:30.5674 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2024-03-06 21:47:30.5674 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:47:30.7751 INFO Request finished in 207.6843ms 200 application/json;charset=utf-8
+2024-03-06 21:47:41.6035 INFO Request starting HTTP/2.0 GET https://localhost:44355/api/User/OddUserGet?id=1  
+2024-03-06 21:47:41.6035 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:47:41.6035 DEBUG The request path  does not match the path filter
+2024-03-06 21:47:41.6581 DEBUG 1 candidate(s) found for the request path '/api/User/OddUserGet'
+2024-03-06 21:47:41.6612 DEBUG Endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)' with route pattern 'api/User/OddUserGet' is valid for the request path '/api/User/OddUserGet'
+2024-03-06 21:47:41.6612 DEBUG Request matched endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:47:41.6612 INFO Executing endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:47:41.6612 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2024-03-06 21:47:41.7094 INFO Route matched with {action = "OddUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult OddUser(Int32) on controller FunDoNotes.Controllers.UserController (FunDo).
+2024-03-06 21:47:41.7094 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-06 21:47:41.7094 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-06 21:47:41.7094 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-06 21:47:41.7094 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-06 21:47:41.7094 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-06 21:47:41.7094 DEBUG Executing controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 21:47:41.9077 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-03-06 21:47:41.9402 DEBUG Executed controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 21:47:41.9479 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2024-03-06 21:47:41.9479 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2024-03-06 21:47:41.9479 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-03-06 21:47:41.9479 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-03-06 21:47:41.9479 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2024-03-06 21:47:41.9581 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2024-03-06 21:47:43.0420 INFO Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-03-06 21:47:43.4285 DEBUG queryContext => new QueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, User>, 
+    RepositoryLayer.Context.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+2024-03-06 21:47:43.4848 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-06 21:47:44.1774 DEBUG Created DbCommand for 'ExecuteReader' (689ms).
+2024-03-06 21:47:44.2018 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:47:44.4608 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:47:44.4801 DEBUG Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__id_0
+2024-03-06 21:47:44.5858 INFO Executed DbCommand (115ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__id_0
+2024-03-06 21:47:44.6700 DEBUG Context 'FundoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-06 21:47:44.7106 DEBUG A data reader was disposed.
+2024-03-06 21:47:44.7106 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:47:44.7230 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:47:44.7230 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-06 21:47:44.7230 DEBUG No information found on request to perform content negotiation.
+2024-03-06 21:47:44.7230 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-06 21:47:44.7230 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-06 21:47:44.7230 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-06 21:47:44.7230 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[System.Collections.Generic.List`1[[RepositoryLayer.Entity.User, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-06 21:47:44.7426 INFO Executed action FunDoNotes.Controllers.UserController.OddUser (FunDo) in 3027.5404ms
+2024-03-06 21:47:44.7426 INFO Executed endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:47:44.7426 DEBUG 'FundoContext' disposed.
+2024-03-06 21:47:44.7426 INFO Request finished in 3143.7943ms 200 application/json; charset=utf-8
+2024-03-06 21:50:28.2608 DEBUG Hosting starting
+2024-03-06 21:50:28.4991 INFO User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-06 21:50:29.1901 DEBUG Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-902fbed5-f2be-402c-b834-fdb4cbee8645.xml'.
+2024-03-06 21:50:29.2052 DEBUG Found key {902fbed5-f2be-402c-b834-fdb4cbee8645}.
+2024-03-06 21:50:29.2297 DEBUG Considering key {902fbed5-f2be-402c-b834-fdb4cbee8645} with expiration date 2024-05-27 11:42:30Z as default key.
+2024-03-06 21:50:29.3170 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 21:50:29.3170 DEBUG Decrypting secret element using Windows DPAPI.
+2024-03-06 21:50:29.3447 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 21:50:29.3503 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-03-06 21:50:29.3503 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-03-06 21:50:29.3503 DEBUG Using key {902fbed5-f2be-402c-b834-fdb4cbee8645} as the default key.
+2024-03-06 21:50:29.3503 DEBUG Key ring with default key {902fbed5-f2be-402c-b834-fdb4cbee8645} was loaded during application startup.
+2024-03-06 21:50:29.3672 DEBUG Starting host: rabbitmq://localhost/
+2024-03-06 21:50:29.4773 DEBUG Connect: guest@localhost:5672/
+2024-03-06 21:50:30.0086 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52858)
+2024-03-06 21:50:30.3051 DEBUG Loaded hosting startup assembly FunDo
+2024-03-06 21:50:30.3051 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-06 21:50:30.3051 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-06 21:50:30.3051 INFO Application started. Press Ctrl+C to shut down.
+2024-03-06 21:50:30.3051 INFO Hosting environment: Development
+2024-03-06 21:50:30.3051 INFO Content root path: C:\Users\user\Collections\FunDo\FunDo
+2024-03-06 21:50:30.3051 DEBUG Hosting started
+2024-03-06 21:50:30.3730 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2024-03-06 21:50:30.6078 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2024-03-06 21:50:30.7257 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:50:30.8137 DEBUG Response markup is scheduled to include browser refresh script injection.
+2024-03-06 21:50:30.8659 DEBUG Response markup was updated to include browser refresh script injection.
+2024-03-06 21:50:30.8659 INFO Request finished in 497.4117ms 200 text/html;charset=utf-8
+2024-03-06 21:50:30.9009 INFO Request starting HTTP/2.0 GET https://localhost:44355/_framework/aspnetcore-browser-refresh.js  
+2024-03-06 21:50:30.9009 INFO Request starting HTTP/2.0 GET https://localhost:44355/_vs/browserLink  
+2024-03-06 21:50:30.9129 INFO Request finished in 12.0179ms 200 application/javascript; charset=utf-8
+2024-03-06 21:50:31.0147 INFO Request finished in 113.7389ms 200 text/javascript; charset=UTF-8
+2024-03-06 21:50:31.1693 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2024-03-06 21:50:31.1693 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:50:31.3812 INFO Request finished in 212.2296ms 200 application/json;charset=utf-8
+2024-03-06 21:50:40.6130 INFO Request starting HTTP/2.0 GET https://localhost:44355/api/User/OddUserGet  
+2024-03-06 21:50:40.6212 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:50:40.6212 DEBUG The request path  does not match the path filter
+2024-03-06 21:50:40.6779 DEBUG 1 candidate(s) found for the request path '/api/User/OddUserGet'
+2024-03-06 21:50:40.6779 DEBUG Endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)' with route pattern 'api/User/OddUserGet' is valid for the request path '/api/User/OddUserGet'
+2024-03-06 21:50:40.6779 DEBUG Request matched endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:50:40.6779 INFO Executing endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:50:40.6991 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2024-03-06 21:50:40.7247 INFO Route matched with {action = "OddUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult OddUser() on controller FunDoNotes.Controllers.UserController (FunDo).
+2024-03-06 21:50:40.7247 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-06 21:50:40.7247 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-06 21:50:40.7247 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-06 21:50:40.7247 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-06 21:50:40.7247 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-06 21:50:40.7247 DEBUG Executing controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 21:50:41.0778 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-03-06 21:50:41.1140 DEBUG Executed controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 21:53:26.3275 DEBUG Hosting starting
+2024-03-06 21:53:26.6264 INFO User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-06 21:53:27.1486 DEBUG Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-902fbed5-f2be-402c-b834-fdb4cbee8645.xml'.
+2024-03-06 21:53:27.1774 DEBUG Found key {902fbed5-f2be-402c-b834-fdb4cbee8645}.
+2024-03-06 21:53:27.1983 DEBUG Considering key {902fbed5-f2be-402c-b834-fdb4cbee8645} with expiration date 2024-05-27 11:42:30Z as default key.
+2024-03-06 21:53:27.3253 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 21:53:27.3253 DEBUG Decrypting secret element using Windows DPAPI.
+2024-03-06 21:53:27.3377 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 21:53:27.3377 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-03-06 21:53:27.3377 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-03-06 21:53:27.3493 DEBUG Using key {902fbed5-f2be-402c-b834-fdb4cbee8645} as the default key.
+2024-03-06 21:53:27.3493 DEBUG Key ring with default key {902fbed5-f2be-402c-b834-fdb4cbee8645} was loaded during application startup.
+2024-03-06 21:53:27.3493 DEBUG Starting host: rabbitmq://localhost/
+2024-03-06 21:53:27.4547 DEBUG Connect: guest@localhost:5672/
+2024-03-06 21:53:27.8549 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52892)
+2024-03-06 21:53:28.1541 DEBUG Loaded hosting startup assembly FunDo
+2024-03-06 21:53:28.1541 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-06 21:53:28.1541 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-06 21:53:28.1541 INFO Application started. Press Ctrl+C to shut down.
+2024-03-06 21:53:28.1541 INFO Hosting environment: Development
+2024-03-06 21:53:28.1541 INFO Content root path: C:\Users\user\Collections\FunDo\FunDo
+2024-03-06 21:53:28.1541 DEBUG Hosting started
+2024-03-06 21:53:28.2409 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2024-03-06 21:53:28.5050 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2024-03-06 21:53:28.6203 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:53:28.7093 DEBUG Response markup is scheduled to include browser refresh script injection.
+2024-03-06 21:53:28.7645 DEBUG Response markup was updated to include browser refresh script injection.
+2024-03-06 21:53:28.7645 INFO Request finished in 553.1769ms 200 text/html;charset=utf-8
+2024-03-06 21:53:28.8009 INFO Request starting HTTP/2.0 GET https://localhost:44355/_framework/aspnetcore-browser-refresh.js  
+2024-03-06 21:53:28.8009 INFO Request starting HTTP/2.0 GET https://localhost:44355/_vs/browserLink  
+2024-03-06 21:53:28.8009 INFO Request finished in 10.7939ms 200 application/javascript; charset=utf-8
+2024-03-06 21:53:28.9621 INFO Request finished in 152.2578ms 200 text/javascript; charset=UTF-8
+2024-03-06 21:53:29.1289 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2024-03-06 21:53:29.1297 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:53:29.3483 INFO Request finished in 219.2387ms 200 application/json;charset=utf-8
+2024-03-06 21:53:39.3926 INFO Request starting HTTP/2.0 GET https://localhost:44355/api/User/OddUserGet  
+2024-03-06 21:53:39.3986 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:53:39.3986 DEBUG The request path  does not match the path filter
+2024-03-06 21:53:39.4562 DEBUG 1 candidate(s) found for the request path '/api/User/OddUserGet'
+2024-03-06 21:53:39.4592 DEBUG Endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)' with route pattern 'api/User/OddUserGet' is valid for the request path '/api/User/OddUserGet'
+2024-03-06 21:53:39.4592 DEBUG Request matched endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:53:39.4592 INFO Executing endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:53:39.4751 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2024-03-06 21:53:39.5011 INFO Route matched with {action = "OddUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult OddUser() on controller FunDoNotes.Controllers.UserController (FunDo).
+2024-03-06 21:53:39.5011 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-06 21:53:39.5011 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-06 21:53:39.5011 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-06 21:53:39.5011 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-06 21:53:39.5047 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-06 21:53:39.5047 DEBUG Executing controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 21:53:39.7661 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-03-06 21:53:39.8022 DEBUG Executed controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 21:53:39.8316 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-06 21:53:39.8335 DEBUG No information found on request to perform content negotiation.
+2024-03-06 21:53:39.8335 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-06 21:53:39.8335 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-06 21:53:39.8335 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-06 21:53:39.8335 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[System.Collections.Generic.List`1[[RepositoryLayer.Entity.User, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-06 21:53:39.8335 INFO Executed action FunDoNotes.Controllers.UserController.OddUser (FunDo) in 339.1724ms
+2024-03-06 21:53:39.8335 INFO Executed endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:53:39.8490 INFO Request finished in 456.7035ms 400 application/json; charset=utf-8
+2024-03-06 21:54:05.9596 INFO Request starting HTTP/2.0 POST https://localhost:44355/api/User/Reg application/json 92
+2024-03-06 21:54:05.9596 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:54:05.9596 DEBUG POST requests are not supported
+2024-03-06 21:54:05.9596 DEBUG 1 candidate(s) found for the request path '/api/User/Reg'
+2024-03-06 21:54:05.9596 DEBUG Endpoint 'FunDoNotes.Controllers.UserController.Register (FunDo)' with route pattern 'api/User/Reg' is valid for the request path '/api/User/Reg'
+2024-03-06 21:54:05.9596 DEBUG Request matched endpoint 'FunDoNotes.Controllers.UserController.Register (FunDo)'
+2024-03-06 21:54:05.9596 INFO Executing endpoint 'FunDoNotes.Controllers.UserController.Register (FunDo)'
+2024-03-06 21:54:06.0076 INFO Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Register(CommonLayer.RequestModel.RegisterModel) on controller FunDoNotes.Controllers.UserController (FunDo).
+2024-03-06 21:54:06.0076 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-06 21:54:06.0076 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-06 21:54:06.0076 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-06 21:54:06.0076 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-06 21:54:06.0076 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-06 21:54:06.0076 DEBUG Executing controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 21:54:06.0076 DEBUG Executed controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 21:54:06.0076 DEBUG Attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.RegisterModel' ...
+2024-03-06 21:54:06.0204 DEBUG Attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.RegisterModel' using the name '' in request data ...
+2024-03-06 21:54:06.0204 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-03-06 21:54:06.0204 DEBUG JSON input formatter succeeded, deserializing to type 'CommonLayer.RequestModel.RegisterModel'
+2024-03-06 21:54:06.0204 DEBUG Done attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.RegisterModel'.
+2024-03-06 21:54:06.0204 DEBUG Done attempting to bind parameter 'model' of type 'CommonLayer.RequestModel.RegisterModel'.
+2024-03-06 21:54:06.0204 DEBUG Attempting to validate the bound parameter 'model' of type 'CommonLayer.RequestModel.RegisterModel' ...
+2024-03-06 21:54:06.0404 DEBUG Done attempting to validate the bound parameter 'model' of type 'CommonLayer.RequestModel.RegisterModel'.
+2024-03-06 21:54:07.4524 INFO Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-03-06 21:54:07.8328 DEBUG queryContext => new QueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, User>, 
+    RepositoryLayer.Context.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2024-03-06 21:54:07.8886 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-06 21:54:08.1311 DEBUG Created DbCommand for 'ExecuteReader' (239ms).
+2024-03-06 21:54:08.1311 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:54:08.4017 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:54:08.4259 DEBUG Executing DbCommand [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__model_Email_0
+2024-03-06 21:54:08.5338 INFO Executed DbCommand (123ms) [Parameters=[@__model_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [User] AS [u]
+WHERE [u].[Email] = @__model_Email_0
+2024-03-06 21:54:08.5500 DEBUG A data reader was disposed.
+2024-03-06 21:54:08.5538 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:54:08.5538 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:54:08.6136 DEBUG 'FundoContext' generated a temporary value for the 'Id' property of new 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-06 21:54:08.7071 DEBUG Context 'FundoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-06 21:54:08.7071 DEBUG SaveChanges starting for 'FundoContext'.
+2024-03-06 21:54:08.7071 DEBUG DetectChanges starting for 'FundoContext'.
+2024-03-06 21:54:08.7416 DEBUG DetectChanges completed for 'FundoContext'.
+2024-03-06 21:54:08.7416 DEBUG Opening connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:54:08.7416 DEBUG Opened connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:54:08.7552 DEBUG Beginning transaction with isolation level 'Unspecified'.
+2024-03-06 21:54:08.7552 DEBUG Began transaction with isolation level 'ReadCommitted'.
+2024-03-06 21:54:08.8472 DEBUG Creating DbCommand for 'ExecuteReader'.
+2024-03-06 21:54:08.8472 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2024-03-06 21:54:08.8483 DEBUG Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [User] ([Email], [FirstName], [LastName], [Password])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-03-06 21:54:08.8850 INFO Executed DbCommand (37ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [User] ([Email], [FirstName], [LastName], [Password])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-03-06 21:54:08.9140 DEBUG Foreign key property 'User.Id' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-03-06 21:54:08.9140 DEBUG A data reader was disposed.
+2024-03-06 21:54:08.9140 DEBUG Committing transaction.
+2024-03-06 21:54:08.9284 DEBUG Committing transaction.
+2024-03-06 21:54:08.9284 DEBUG Closing connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:54:08.9284 DEBUG Closed connection to database 'New_Fundo_Data' on server 'DESKTOP-PPOP687\MSSQLSERVER06'.
+2024-03-06 21:54:08.9284 DEBUG Disposing transaction.
+2024-03-06 21:54:08.9476 DEBUG An 'User' entity tracked by 'FundoContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-03-06 21:54:08.9476 DEBUG SaveChanges completed for 'FundoContext' with 1 entities written to the database.
+2024-03-06 21:54:08.9476 INFO Register Successful
+2024-03-06 21:54:08.9476 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-06 21:54:08.9476 DEBUG No information found on request to perform content negotiation.
+2024-03-06 21:54:08.9476 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-06 21:54:08.9476 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-06 21:54:08.9476 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-06 21:54:08.9476 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[RepositoryLayer.Entity.User, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-06 21:54:08.9476 INFO Executed action FunDoNotes.Controllers.UserController.Register (FunDo) in 2947.257ms
+2024-03-06 21:54:08.9476 INFO Executed endpoint 'FunDoNotes.Controllers.UserController.Register (FunDo)'
+2024-03-06 21:54:08.9476 DEBUG 'FundoContext' disposed.
+2024-03-06 21:54:08.9601 INFO Request finished in 3001.3276ms 200 application/json; charset=utf-8
+2024-03-06 21:54:16.9818 INFO Request starting HTTP/2.0 GET https://localhost:44355/api/User/OddUserGet  
+2024-03-06 21:54:16.9818 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 21:54:16.9818 DEBUG The request path  does not match the path filter
+2024-03-06 21:54:16.9818 DEBUG 1 candidate(s) found for the request path '/api/User/OddUserGet'
+2024-03-06 21:54:16.9818 DEBUG Endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)' with route pattern 'api/User/OddUserGet' is valid for the request path '/api/User/OddUserGet'
+2024-03-06 21:54:16.9818 DEBUG Request matched endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:54:16.9818 INFO Executing endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:54:16.9818 INFO Route matched with {action = "OddUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult OddUser() on controller FunDoNotes.Controllers.UserController (FunDo).
+2024-03-06 21:54:16.9818 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-06 21:54:16.9818 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-06 21:54:16.9897 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-06 21:54:16.9897 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-06 21:54:16.9897 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-06 21:54:16.9897 DEBUG Executing controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 21:54:16.9897 DEBUG Executed controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 21:54:16.9897 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-06 21:54:16.9897 DEBUG No information found on request to perform content negotiation.
+2024-03-06 21:54:16.9897 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-06 21:54:16.9897 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-06 21:54:16.9897 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-06 21:54:16.9897 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[System.Collections.Generic.List`1[[RepositoryLayer.Entity.User, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-06 21:54:16.9897 INFO Executed action FunDoNotes.Controllers.UserController.OddUser (FunDo) in 5.6321ms
+2024-03-06 21:54:16.9897 INFO Executed endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 21:54:16.9897 INFO Request finished in 14.6654ms 400 application/json; charset=utf-8
+2024-03-06 22:02:22.1250 DEBUG Hosting starting
+2024-03-06 22:02:22.2905 INFO User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-06 22:02:22.8346 DEBUG Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-902fbed5-f2be-402c-b834-fdb4cbee8645.xml'.
+2024-03-06 22:02:22.8608 DEBUG Found key {902fbed5-f2be-402c-b834-fdb4cbee8645}.
+2024-03-06 22:02:22.8838 DEBUG Considering key {902fbed5-f2be-402c-b834-fdb4cbee8645} with expiration date 2024-05-27 11:42:30Z as default key.
+2024-03-06 22:02:23.0005 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 22:02:23.0005 DEBUG Decrypting secret element using Windows DPAPI.
+2024-03-06 22:02:23.0110 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 22:02:23.0110 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-03-06 22:02:23.0202 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-03-06 22:02:23.0202 DEBUG Using key {902fbed5-f2be-402c-b834-fdb4cbee8645} as the default key.
+2024-03-06 22:02:23.0202 DEBUG Key ring with default key {902fbed5-f2be-402c-b834-fdb4cbee8645} was loaded during application startup.
+2024-03-06 22:02:23.0363 DEBUG Starting host: rabbitmq://localhost/
+2024-03-06 22:02:23.1472 DEBUG Connect: guest@localhost:5672/
+2024-03-06 22:02:23.5200 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52953)
+2024-03-06 22:02:23.8498 DEBUG Loaded hosting startup assembly FunDo
+2024-03-06 22:02:23.8498 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-06 22:02:23.8498 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-06 22:02:23.8498 INFO Application started. Press Ctrl+C to shut down.
+2024-03-06 22:02:23.8498 INFO Hosting environment: Development
+2024-03-06 22:02:23.8498 INFO Content root path: C:\Users\user\Collections\FunDo\FunDo
+2024-03-06 22:02:23.8498 DEBUG Hosting started
+2024-03-06 22:02:23.9335 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2024-03-06 22:02:24.2240 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2024-03-06 22:02:24.4354 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 22:02:24.5396 DEBUG Response markup is scheduled to include browser refresh script injection.
+2024-03-06 22:02:24.5964 DEBUG Response markup was updated to include browser refresh script injection.
+2024-03-06 22:02:24.6005 INFO Request finished in 669.0978ms 200 text/html;charset=utf-8
+2024-03-06 22:02:24.6485 INFO Request starting HTTP/2.0 GET https://localhost:44355/_framework/aspnetcore-browser-refresh.js  
+2024-03-06 22:02:24.6638 INFO Request finished in 14.8143ms 200 application/javascript; charset=utf-8
+2024-03-06 22:02:24.6638 INFO Request starting HTTP/2.0 GET https://localhost:44355/_vs/browserLink  
+2024-03-06 22:02:24.7660 INFO Request finished in 101.6768ms 200 text/javascript; charset=UTF-8
+2024-03-06 22:02:24.9589 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2024-03-06 22:02:24.9589 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 22:02:25.1822 INFO Request finished in 223.5351ms 200 application/json;charset=utf-8
+2024-03-06 22:02:31.0424 INFO Request starting HTTP/2.0 GET https://localhost:44355/api/User/OddUserGet  
+2024-03-06 22:02:31.0424 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 22:02:31.0527 DEBUG The request path  does not match the path filter
+2024-03-06 22:02:31.1040 DEBUG 1 candidate(s) found for the request path '/api/User/OddUserGet'
+2024-03-06 22:02:31.1040 DEBUG Endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)' with route pattern 'api/User/OddUserGet' is valid for the request path '/api/User/OddUserGet'
+2024-03-06 22:02:31.1040 DEBUG Request matched endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 22:02:31.1040 INFO Executing endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 22:02:31.1244 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2024-03-06 22:02:31.1547 INFO Route matched with {action = "OddUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult OddUser() on controller FunDoNotes.Controllers.UserController (FunDo).
+2024-03-06 22:02:31.1547 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-06 22:02:31.1547 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-06 22:02:31.1547 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-06 22:02:31.1547 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-06 22:02:31.1547 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-06 22:02:31.1547 DEBUG Executing controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 22:02:31.4169 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-03-06 22:02:31.4549 DEBUG Executed controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 22:02:31.4650 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-06 22:02:31.4650 DEBUG No information found on request to perform content negotiation.
+2024-03-06 22:02:31.4650 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-06 22:02:31.4650 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-06 22:02:31.4650 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-06 22:02:31.4650 INFO Executing ObjectResult, writing value of type 'CommonLayer.ResponseModel.ResModel`1[[System.Collections.Generic.List`1[[RepositoryLayer.Entity.User, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-06 22:02:31.4841 INFO Executed action FunDoNotes.Controllers.UserController.OddUser (FunDo) in 322.414ms
+2024-03-06 22:02:31.4841 INFO Executed endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 22:02:31.4841 INFO Request finished in 443.3598ms 400 application/json; charset=utf-8
+2024-03-06 22:03:13.8882 DEBUG Hosting starting
+2024-03-06 22:03:14.0186 INFO User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-06 22:03:14.4432 DEBUG Reading data from file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-902fbed5-f2be-402c-b834-fdb4cbee8645.xml'.
+2024-03-06 22:03:14.4432 DEBUG Found key {902fbed5-f2be-402c-b834-fdb4cbee8645}.
+2024-03-06 22:03:14.4715 DEBUG Considering key {902fbed5-f2be-402c-b834-fdb4cbee8645} with expiration date 2024-05-27 11:42:30Z as default key.
+2024-03-06 22:03:14.5342 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 22:03:14.5432 DEBUG Decrypting secret element using Windows DPAPI.
+2024-03-06 22:03:14.5432 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-06 22:03:14.5513 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-03-06 22:03:14.5513 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-03-06 22:03:14.5513 DEBUG Using key {902fbed5-f2be-402c-b834-fdb4cbee8645} as the default key.
+2024-03-06 22:03:14.5513 DEBUG Key ring with default key {902fbed5-f2be-402c-b834-fdb4cbee8645} was loaded during application startup.
+2024-03-06 22:03:14.5727 DEBUG Starting host: rabbitmq://localhost/
+2024-03-06 22:03:14.6965 DEBUG Connect: guest@localhost:5672/
+2024-03-06 22:03:15.0857 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52970)
+2024-03-06 22:03:15.3536 DEBUG Loaded hosting startup assembly FunDo
+2024-03-06 22:03:15.3536 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-06 22:03:15.3536 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-06 22:03:15.3536 INFO Application started. Press Ctrl+C to shut down.
+2024-03-06 22:03:15.3536 INFO Hosting environment: Development
+2024-03-06 22:03:15.3536 INFO Content root path: C:\Users\user\Collections\FunDo\FunDo
+2024-03-06 22:03:15.3536 DEBUG Hosting started
+2024-03-06 22:03:15.4250 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2024-03-06 22:03:15.5580 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2024-03-06 22:03:15.6616 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 22:03:15.7603 DEBUG Response markup is scheduled to include browser refresh script injection.
+2024-03-06 22:03:15.8135 DEBUG Response markup was updated to include browser refresh script injection.
+2024-03-06 22:03:15.8175 INFO Request finished in 394.9082ms 200 text/html;charset=utf-8
+2024-03-06 22:03:15.9487 INFO Request starting HTTP/2.0 GET https://localhost:44355/_framework/aspnetcore-browser-refresh.js  
+2024-03-06 22:03:15.9751 INFO Request finished in 26.3931ms 200 application/javascript; charset=utf-8
+2024-03-06 22:03:15.9751 INFO Request starting HTTP/2.0 GET https://localhost:44355/_vs/browserLink  
+2024-03-06 22:03:16.0811 INFO Request finished in 105.2913ms 200 text/javascript; charset=UTF-8
+2024-03-06 22:03:16.2732 INFO Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2024-03-06 22:03:16.2732 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 22:03:16.4975 INFO Request finished in 224.5778ms 200 application/json;charset=utf-8
+2024-03-06 22:03:23.6222 INFO Request starting HTTP/2.0 GET https://localhost:44355/api/User/OddUserGet  
+2024-03-06 22:03:23.6317 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2024-03-06 22:03:23.6317 DEBUG The request path  does not match the path filter
+2024-03-06 22:03:23.6875 DEBUG 1 candidate(s) found for the request path '/api/User/OddUserGet'
+2024-03-06 22:03:23.6875 DEBUG Endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)' with route pattern 'api/User/OddUserGet' is valid for the request path '/api/User/OddUserGet'
+2024-03-06 22:03:23.6921 DEBUG Request matched endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 22:03:23.6921 INFO Executing endpoint 'FunDoNotes.Controllers.UserController.OddUser (FunDo)'
+2024-03-06 22:03:23.7088 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2024-03-06 22:03:23.7417 INFO Route matched with {action = "OddUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult OddUser() on controller FunDoNotes.Controllers.UserController (FunDo).
+2024-03-06 22:03:23.7417 DEBUG Execution plan of authorization filters (in the following order): None
+2024-03-06 22:03:23.7417 DEBUG Execution plan of resource filters (in the following order): None
+2024-03-06 22:03:23.7417 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-06 22:03:23.7417 DEBUG Execution plan of exception filters (in the following order): None
+2024-03-06 22:03:23.7417 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-06 22:03:23.7417 DEBUG Executing controller factory for controller FunDoNotes.Controllers.UserController (FunDo)
+2024-03-06 22:03:23.9486 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-03-06 22:03:23.9851 DEBUG Executed controller factory for controller FunDoNotes.Controllers.UserController (FunDo)

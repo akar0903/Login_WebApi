@@ -15,9 +15,7 @@ namespace RepositoryLayer.Interfaces
         public bool ResetPassword(string Email, ResetPasswordModel resetPasswordModel);
         public bool IsEmailAlreadyRegistered(string email);
         public User IsUserThere(RegisterModel model, int id);
-
         public List<User> SearchUser(string name);
-
-
+        public List<User> OddUser(int id);
     }
 }
